@@ -10,6 +10,20 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: {
+          DEFAULT: '#0B1F3B',
+          light: '#0A2540',
+        },
+        secondary: {
+          DEFAULT: '#C9A24D',
+        },
+        neutral: {
+          DEFAULT: '#F5F1E8',
+        }
+      },
+      fontFamily: {
+        serif: ['var(--font-cinzel)', 'serif'],
+        sans: ['var(--font-inter)', 'sans-serif'],
       },
     },
   },
