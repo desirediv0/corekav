@@ -1,154 +1,179 @@
 import Hero from '@/components/Hero';
 import SectionWrapper from '@/components/SectionWrapper';
-import ExportVerticalCard from '@/components/ExportVerticalCard';
 import ContactCTA from '@/components/ContactCTA';
-import { Wheat, Stethoscope, Factory, Leaf, Flower, Globe, ShieldCheck, Truck, Anchor, CheckCircle } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowRight, Leaf, Globe, ShieldCheck, Factory, Zap, Stethoscope, Sprout } from 'lucide-react';
 
-export const metadata = {
-  title: 'CoreKAV International Trade | Diversified Exporter from India',
-  description: 'Supplying essential products across agriculture, healthcare, industry, energy, and construction to import-dependent global markets.',
+// Client images: category collages in /public (nutra, animal-feed, industrial, medical, veterinary, etc.)
+const WHAT_WE_DO_CARD_IMAGES = {
+  nutraceutical: '/products/herbal/Ashwagandha-Extract.png',
+  foodSpices: '/products/agro/Paprika-Oleoresin.jpg',
+  agro: '/products/Nutrients/Makhana.jpeg',
+  animalFeed: '/products/animal-feed/Lactation-Concentrate.jpg',
+  veterinary: '/products/veterinary/Vet-Grade-Disposable-Syringes.jpeg',
+  medical: '/products/medical/Disposable-Medical-Syringes.jpeg',
+  industrial: '/products/industrial/IP-Rated-Inverter-Enclosures.png',
+  carbon: '/esg-hero.jpg',
 };
 
 export default function Home() {
-  const verticals = [
-    {
-      title: "Animal Feed & Nutrition",
-      description: "Bulk compound feed, concentrates, supplements, and processed feed products for livestock, poultry, and aquaculture.",
-      link: "/exports/animal-feed",
-      icon: Wheat
-    },
-    {
-      title: "Veterinary Consumables",
-      description: "Veterinary disposables, farm-use tools, and nutritional consumables for commercial livestock operations.",
-      link: "/exports/veterinary-animal-husbandry-consumables",
-      icon: Stethoscope
-    },
-    {
-      title: "Medical Consumables",
-      description: "Hospital-use medical disposables and diagnostic consumables for healthcare institutions, NGOs, and public procurement.",
-      link: "/exports/medical-consumables",
-      icon: ShieldCheck
-    },
-    {
-      title: "Industrial & Electrical",
-      description: "Power system accessories, enclosures, connectors, and distribution components for infrastructure and renewable projects.",
-      link: "/exports/industrial-electrical-components",
-      icon: Factory
-    },
-    {
-      title: "Spices & Food Ingredients",
-      description: "Bulk spices, natural food inputs, and plant-based functional ingredients supplied for food processing and institutional consumption.",
-      link: "/exports/makhana-fox-nuts-lotus-seeds",
-      icon: Leaf
-    },
-    {
-      title: "Nutraceuticals & Ayurveda",
-      description: "Botanical ingredients, standardized herbal extracts, and ayurveda-based formulation inputs for wellness and beauty applications.",
-      link: "/exports/herbal-nutraceutical-ayurveda-ingredients",
-      icon: Flower
-    },
-    {
-      title: "Carbon Trading & ESG",
-      description: "Structured carbon credit trading, project aggregation, and ESG-aligned advisory services for long-term decarbonization.",
-      link: "/exports/carbon-credits-esg-climate-solutions",
-      icon: Globe
-    }
-  ];
-
   return (
-    <main className="bg-background">
+    <main>
       <Hero
-        title="Diversified Exporter from India for Institutional Buyers"
-        subtitle="Supplying essential products across agriculture, healthcare, industry, energy, and construction to import-dependent global markets."
-        bgImage="/home-hero-bg.jpg"
-        ctaText="Engage with a Reliable Partner"
-        ctaLink="/markets-and-contact"
+        title="CoreKAV International Trade"
+        subtitle="Institutional Export Supply Chain Partner From India"
         variant="home"
+        ctaText="View Products"
+        ctaLink="#what-we-do"
       />
 
-      <SectionWrapper id="about-intro" className="bg-white">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <span className="text-secondary font-bold uppercase tracking-[0.2em] text-xs">Who We Are</span>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary leading-tight">Institutional Reliability in Global Trade</h2>
-            <div className="h-1 w-20 bg-secondary" />
-            <p className="text-primary/70 leading-loose text-lg font-light">
-              We are an India-based export company supplying essential, high-rotation products to institutional buyers, importers, distributors, EPC contractors, and government-linked procurement entities across South Asia, SE Asia, the Middle East (GCC), Africa, and Central Asia.
-            </p>
-            <p className="text-primary/70 leading-loose text-lg font-light">
-              Our operations are built on repeat-order relationships, compliance-led sourcing, conservative financial planning, and disciplined execution, positioning us as a long-term export partner rather than a short-term trading intermediary.
-            </p>
-          </div>
-
-          <div className="relative mt-8 lg:mt-0">
-            <div className="absolute top-0 right-0 w-3/4 h-full bg-neutral-100 -z-10 rounded-lg transform translate-x-8 translate-y-8" />
-            <div className="bg-primary p-10 rounded-lg text-neutral grid grid-cols-1 sm:grid-cols-2 gap-8 shadow-2xl">
-              <div className="p-4 border border-neutral/10 rounded-lg hover:bg-white/5 transition-colors">
-                <Anchor className="text-secondary mb-4" size={32} />
-                <h4 className="text-xl font-bold font-serif mb-2">Steady Scale-Up</h4>
-                <span className="text-xs opacity-70 leading-relaxed block">Controlled growth with predictable working capital cycles.</span>
-              </div>
-              <div className="p-4 border border-neutral/10 rounded-lg hover:bg-white/5 transition-colors">
-                <Factory className="text-secondary mb-4" size={32} />
-                <h4 className="text-xl font-bold font-serif mb-2">Compliance Led</h4>
-                <span className="text-xs opacity-70 leading-relaxed block">Strict documentation and banking transparency.</span>
-              </div>
-              <div className="p-4 border border-neutral/10 rounded-lg hover:bg-white/5 transition-colors">
-                <Globe className="text-secondary mb-4" size={32} />
-                <h4 className="text-xl font-bold font-serif mb-2">Multi-Region</h4>
-                <span className="text-xs opacity-70 leading-relaxed block">Presence across GCC, Africa, SE Asia.</span>
-              </div>
-              <div className="p-4 border border-neutral/10 rounded-lg hover:bg-white/5 transition-colors">
-                <ShieldCheck className="text-secondary mb-4" size={32} />
-                <h4 className="text-xl font-bold font-serif mb-2">Long-Term</h4>
-                <span className="text-xs opacity-70 leading-relaxed block">Focus on repeat and program-based procurement.</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </SectionWrapper>
-
-      <SectionWrapper id="verticals" className="bg-neutral-50 relative">
-        <div className="absolute inset-0 opacity-5 pointer-events-none"
-          style={{
-            backgroundImage: 'radial-gradient(#0B1F3B 0.5px, transparent 0.5px)',
-            backgroundSize: '20px 20px'
-          }}
-        />
-
-        <div className="text-center max-w-4xl mx-auto mb-10 relative z-10">
-          <span className="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Our Portfolio</span>
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">Strategic Export Verticals</h2>
-          <div className="h-1 w-24 bg-secondary mx-auto mb-6" />
-          <p className="text-primary/70 text-lg leading-relaxed font-light">
-            We operate across multiple essential product categories, each managed with dedicated sourcing, quality control, and export execution discipline.
+      {/* Intro Text */}
+      <SectionWrapper className="bg-white text-center">
+        <div className="max-w-4xl mx-auto space-y-6">
+          <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">Supplying Essential Products to Global Markets</h2>
+          <p className="text-lg text-primary/70 leading-relaxed">
+            Supplying essential products across nutraceutical, herbal extracts & ayurveda ingredients, food, spices & plant-based ingredients, specialised agro (makhana, saffron), animal feed supplements & nutritional concentrates, veterinary & animal husbandry consumables, human medical consumables, and electrical, industrial & renewable energy components to import-dependent global markets.
           </p>
         </div>
+      </SectionWrapper>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 relative z-10">
-          {verticals.map((v, i) => (
-            <ExportVerticalCard key={i} {...v} />
-          ))}
+      {/* WHAT WE DO – Export & Services (infographic-style, LDC-inspired) */}
+      <SectionWrapper id="what-we-do" className="bg-neutral/20">
+        <div className="text-center mb-12">
+          <span className="text-xs font-bold uppercase tracking-[0.3em] text-secondary">Export &amp; Services</span>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mt-2 mb-4">What We Do</h2>
+          <p className="text-primary/70 max-w-2xl mx-auto">
+            We responsibly source, transform, and deliver essential products across agriculture, nutrition, healthcare, and infrastructure to institutional buyers worldwide.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <ServiceCard
+            title="Nutraceutical, Herbal & Ayurveda"
+            desc="Botanical extracts, powders, and formulation inputs for supplements and personal care."
+            icon={Leaf}
+            image={WHAT_WE_DO_CARD_IMAGES.nutraceutical}
+            href="/exports/herbal-nutraceutical-ayurveda-ingredients"
+          />
+          <ServiceCard
+            title="Food, Spices & Plant-Based"
+            desc="Bulk spices, natural food colours, oleoresins, and plant-based functional ingredients."
+            icon={Sprout}
+            image={WHAT_WE_DO_CARD_IMAGES.foodSpices}
+            href="/exports/food-spices-plant-based"
+          />
+          <ServiceCard
+            title="Specialised Agro (Makhana, Saffron)"
+            desc="Fox nuts, pea protein, saffron, and dehydrated vegetables."
+            icon={Sprout}
+            image={WHAT_WE_DO_CARD_IMAGES.agro}
+            href="/exports/makhana-fox-nuts-lotus-seeds"
+          />
+          <ServiceCard
+            title="Animal Feed & Nutrition"
+            desc="Compound feed, concentrates, and supplements for livestock, poultry, and aquaculture."
+            icon={Factory}
+            image={WHAT_WE_DO_CARD_IMAGES.animalFeed}
+            href="/exports/animal-feed"
+          />
+          <ServiceCard
+            title="Veterinary & Animal Husbandry"
+            desc="Vet-grade disposables, farm tools, and consumables for commercial livestock."
+            icon={ShieldCheck}
+            image={WHAT_WE_DO_CARD_IMAGES.veterinary}
+            href="/exports/veterinary-animal-husbandry-consumables"
+          />
+          <ServiceCard
+            title="Human Medical Consumables"
+            desc="Hospital disposables and diagnostic consumables for healthcare institutions."
+            icon={Stethoscope}
+            image={WHAT_WE_DO_CARD_IMAGES.medical}
+            href="/exports/medical-consumables"
+          />
+          <ServiceCard
+            title="Industrial & Electrical"
+            desc="Power system accessories, enclosures, and components for renewable and infrastructure."
+            icon={Zap}
+            image={WHAT_WE_DO_CARD_IMAGES.industrial}
+            href="/exports/industrial-electrical-components"
+          />
+          <ServiceCard
+            title="Carbon &amp; ESG"
+            desc="Carbon credit trading, project aggregation, and ESG-aligned advisory."
+            icon={Globe}
+            image={WHAT_WE_DO_CARD_IMAGES.carbon}
+            href="/exports/carbon-credits-esg-climate-solutions"
+          />
         </div>
       </SectionWrapper>
 
-      <SectionWrapper className="bg-white">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-serif font-bold text-primary mb-6">Global Markets We Serve</h2>
-          <div className="h-1 w-24 bg-secondary mx-auto" />
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
-          {['South Asia', 'Middle East & GCC', 'Africa', 'South East Asia', 'Central Asia', 'Emerging Global Markets'].map((m) => (
-            <div key={m} className="p-6 border border-neutral-100 rounded-sm hover:border-secondary transition-colors group cursor-default">
-              <Globe className="mx-auto text-secondary mb-3 group-hover:scale-110 transition-transform" size={24} />
-              <span className="font-bold text-primary text-sm">{m}</span>
+
+      {/* Global Markets – Alternate Background (Midnight Blue #0A2540) */}
+      <SectionWrapper className="bg-primary-light text-neutral overflow-hidden">
+        <div className="relative z-10">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16">Global Markets We Serve</h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
+            <MarketItem name="South Asia" />
+            <MarketItem name="Middle East & GCC" />
+            <MarketItem name="Africa" />
+            <MarketItem name="South East Asia" />
+            <MarketItem name="Central Asia" />
+          </div>
+
+          <div className="mt-20 max-w-3xl mx-auto text-center border-t border-white/10 pt-10">
+            <p className="text-xl font-light opacity-90 mb-8">
+              If you are an importer, distributor, EPC contractor, or institutional buyer seeking a stable and compliant Indian export supplier, we welcome structured discussions.
+            </p>
+            <div className="inline-block p-6 border border-secondary rounded-xl bg-white/5 backdrop-blur-sm text-left">
+              <h3 className="font-bold text-secondary text-lg mb-2">Contact Us</h3>
+              <p className="font-semibold text-neutral">CoreKAV International Trade</p>
+              <p>B-39, 1st Floor, Middle Cir, Connaught Place, New Delhi, India 110001</p>
+              <p>Mobile/WhatsApp: +91-9319337377</p>
+              <p>Email: info@corekav.com</p>
             </div>
-          ))}
+          </div>
+
         </div>
       </SectionWrapper>
 
-      <ContactCTA />
     </main>
   );
 }
+
+const ServiceCard = ({ title, desc, icon: Icon, image, href }) => (
+  <Link href={href} className="group bg-white rounded shadow-sm hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20 block h-full overflow-hidden">
+    {/* Client image: top of card (category collage) */}
+    {image ? (
+      <div className="relative h-40 w-full overflow-hidden bg-neutral-100">
+        <Image
+          src={image}
+          alt=""
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
+          sizes="(max-width: 768px) 100vw, 25vw"
+        />
+      </div>
+    ) : (
+      <div className="w-12 h-12 mt-8 ml-8 bg-primary/5 rounded-full flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-white transition-colors">
+        <Icon size={24} className="text-primary group-hover:text-white" />
+      </div>
+    )}
+    <div className="p-6">
+      <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">{title}</h3>
+      <p className="text-primary/60 text-sm leading-relaxed mb-6">{desc}</p>
+      <div className="flex items-center text-secondary text-sm font-bold tracking-wider uppercase group-hover:translate-x-1 transition-transform">
+        Explore <ArrowRight size={16} className="ml-2" />
+      </div>
+    </div>
+  </Link>
+);
+
+const MarketItem = ({ name }) => (
+  <div className="flex flex-col items-center gap-4">
+    <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
+      <Globe className="text-secondary" />
+    </div>
+    <span className="font-bold tracking-wide">{name}</span>
+  </div>
+);

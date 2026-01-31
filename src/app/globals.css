@@ -2,9 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CoreKAV brand colours (client-specified) */
 :root {
-  --background: #F5F1E8;
-  --foreground: #0B1F3B;
+  /* Main Background – Deep Navy Blue (domain: corekav.com) */
+  --color-main-bg: #0b1f3b;
+  /* Alternate Background – Midnight Blue */
+  --color-alternate-bg: #0a2540;
+  /* Primary Accent – Muted Gold / Brass */
+  --color-accent: #c9a24d;
+
+  --background: #f5f1e8;
+  --foreground: #0b1f3b;
 }
 
 body {
@@ -12,6 +20,11 @@ body {
   background: var(--background);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-cinzel), serif;
 }

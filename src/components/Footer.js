@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
@@ -7,32 +8,37 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto px-4 md:px-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
 
-                    {/* Brand Info */}
+                    {/* Brand Info – logo + tagline (client colours) */}
                     <div className="space-y-6">
                         <Link href="/" className="inline-block">
-                            <span className="text-2xl font-serif font-bold text-secondary tracking-wide">
-                                COREKAV
-                            </span>
-                            <span className="block text-[10px] font-sans tracking-[0.2em] uppercase text-neutral/70 mt-1">
-                                International Trade
+                            <Image
+                                src="/logo.png"
+                                alt="CoreKAV International Trade"
+                                width={160}
+                                height={64}
+                                className="h-20 w-auto object-contain"
+                            />
+                            <span className="block text-[9px] font-sans tracking-[0.2em] uppercase text-neutral/70 mt-2 max-w-[180px]">
+                                International Trade, Export &amp; Global Sourcing Solutions
                             </span>
                         </Link>
                         <p className="text-neutral/70 text-sm leading-relaxed max-w-xs">
-                            Your trusted partner in global sourcing. We bridge the gap between Indian excellence and international demand with institutional-grade reliability.
+                            Supplying essential products to institutional buyers, importers, and government entities across South Asia, Middle East, Africa, and Emerging Markets.
                         </p>
                     </div>
 
-                    {/* Export Verticals */}
+                    {/* What We Do (pages 2–9) */}
                     <div>
-                        <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">Export Divisions</h3>
+                        <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">What We Do</h3>
                         <ul className="space-y-3 text-sm text-neutral/80">
+                            <li><Link href="/exports/herbal-nutraceutical-ayurveda-ingredients" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Nutraceutical &amp; Herbal</Link></li>
+                            <li><Link href="/exports/food-spices-plant-based" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Food, Spices &amp; Plant-Based</Link></li>
+                            <li><Link href="/exports/makhana-fox-nuts-lotus-seeds" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Specialised Agro</Link></li>
                             <li><Link href="/exports/animal-feed" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Animal Feed</Link></li>
-                            <li><Link href="/exports/veterinary-animal-husbandry-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Veterinary</Link></li>
-                            <li><Link href="/exports/medical-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Medical Consumables</Link></li>
-                            <li><Link href="/exports/industrial-electrical-components" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Industrial & Electrical</Link></li>
-                            <li><Link href="/exports/makhana-fox-nuts-lotus-seeds" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Spices & Food</Link></li>
-                            <li><Link href="/exports/herbal-nutraceutical-ayurveda-ingredients" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Nutraceuticals</Link></li>
-                            <li><Link href="/exports/carbon-credits-esg-climate-solutions" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Carbon & ESG</Link></li>
+                            <li><Link href="/exports/veterinary-animal-husbandry-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Veterinary Consumables</Link></li>
+                            <li><Link href="/exports/medical-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Human Medical Consumables</Link></li>
+                            <li><Link href="/exports/industrial-electrical-components" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Industrial &amp; Electrical</Link></li>
+                            <li><Link href="/exports/carbon-credits-esg-climate-solutions" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Carbon &amp; ESG</Link></li>
                         </ul>
                     </div>
 
@@ -40,28 +46,30 @@ const Footer = () => {
                     <div>
                         <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">Company</h3>
                         <ul className="space-y-3 text-sm text-neutral/80">
-                            <li><Link href="/about" className="hover:text-secondary transition-colors">About/Profile</Link></li>
-                            <li><Link href="/markets-and-contact" className="hover:text-secondary transition-colors">Markets Served</Link></li>
-                            <li><Link href="/markets-and-contact" className="hover:text-secondary transition-colors">Partner With Us</Link></li>
-                            <li><Link href="/markets-and-contact#faq" className="hover:text-secondary transition-colors">FAQs</Link></li>
+                            <li><Link href="/about" className="hover:text-secondary transition-colors">Who We Are</Link></li>
+                            <li><Link href="/markets-and-contact" className="hover:text-secondary transition-colors">Markets &amp; Contact</Link></li>
+                            <li><Link href="/faq" className="hover:text-secondary transition-colors">FAQs</Link></li>
+                            <li><Link href="/privacy-policy" className="hover:text-secondary transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms-of-trade" className="hover:text-secondary transition-colors">Terms of Trade</Link></li>
                         </ul>
                     </div>
 
                     {/* Contact */}
                     <div>
-                        <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">Contact HQ</h3>
+                        <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">Contact Us</h3>
                         <div className="space-y-5 text-sm text-neutral/80">
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                                <span className="leading-relaxed">Trade Tower, Mumbai<br />Maharashtra, India</span>
+                                <span className="leading-relaxed">CoreKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place<br />New Delhi, India 110001</span>
                             </div>
                             <div className="flex items-center gap-4">
                                 <IconWrapper icon={Phone} />
-                                <span>+91 98765 43210</span>
+                                <a href="tel:+919319337377" className="hover:text-white transition-colors">+91-9319337377</a>
+
                             </div>
                             <div className="flex items-center gap-4">
                                 <IconWrapper icon={Mail} />
-                                <a href="mailto:export@corekav.com" className="hover:text-white transition-colors">export@corekav.com</a>
+                                <a href="mailto:info@corekav.com" className="hover:text-white transition-colors">info@corekav.com</a>
                             </div>
                         </div>
                     </div>

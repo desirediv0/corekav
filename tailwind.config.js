@@ -10,10 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        /* Main Background – Deep Navy Blue */
         primary: {
           DEFAULT: '#0B1F3B',
-          light: '#0A2540',
+          light: '#0A2540', /* Alternate – Midnight Blue */
         },
+        /* Primary Accent – Muted Gold / Brass */
         secondary: {
           DEFAULT: '#C9A24D',
         },

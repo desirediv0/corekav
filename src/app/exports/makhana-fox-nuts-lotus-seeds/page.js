@@ -1,70 +1,67 @@
 import ExportPageTemplate from '@/components/ExportPageTemplate';
 
 export const metadata = {
-    title: 'Makhana & Spices Exporter India | Fox Nuts & Functional Ingredients',
-    description: 'Exotic Spices, Makhana (Fox Nuts), and Plant-Based Functional Ingredients. HS Code 080290.',
+    title: 'Specialised Agro, Makhana & Saffron Exporter India',
+    description: 'Bulk Makhana (Fox Nuts), Pea Protein Isolate, and Saffron exports.',
 };
 
-export default function Spices() {
+export default function Makhana() {
+    // Client images: save to public/products/agro/ (see CLIENT_IMAGES_PLACEMENT.md)
     const products = [
         {
-            name: "Makhana (Fox Nuts / Lotus Seeds)",
-            description: "Healthy snack & functional food ingredient. Low GI, Rich in Magnesium/Potassium. Used in snacks, traditional medicine, and gluten-free foods.",
+            name: "Makhana (Fox Nuts)",
+            description: "Low-GI healthy snack, rich in protein and minerals. Gluten-free and vegan.",
+            image: "/products/Nutrients/Makhana.jpeg",
             specs: [
                 { label: "HS Code", value: "080290" },
-                { label: "Forms", value: "Raw, Puffed, Roasted, Flour" }
-            ]
-        },
-        {
-            name: "Chilli Oleoresin",
-            description: "Natural colouring & flavouring agent. Highly concentrated. Used in processed foods, pharma (capsaicin), and cosmetics.",
-            specs: [
-                { label: "HS Code", value: "330190" },
-                { label: "Active", value: "Capsaicin, Capsanthin" }
-            ]
-        },
-        {
-            name: "Saffron",
-            description: "Premium spice for culinary, nutraceutical, and cosmetic use. Strong antioxidant & neuroprotective properties.",
-            specs: [
-                { label: "HS Code", value: "091020" },
-                { label: "Forms", value: "Whole Stigmas, Powder" }
+                { label: "Forms", value: "Raw, Roasted, Puffed, Flour" }
             ]
         },
         {
             name: "Pea Protein Isolate",
-            description: "~80–85% protein content. Plant-based meat/dairy alternative. Allergen-free, neutral taste.",
+            description: "80-85% protein content. Allergen-free plant protein for meat/dairy alternatives.",
+            image: "/products/Nutrients/Pea-Protein-Isolate.avif",
             specs: [
                 { label: "HS Code", value: "350400" },
-                { label: "Form", value: "Powder (Spray-dried)" }
+                { label: "Form", value: "Spray-dried Powder" }
             ]
         },
         {
-            name: "Moringa Leaf / Powder",
-            description: "Nutritional supplement & functional food blend. 25–30% plant protein. Rich in Calcium, Iron, Potassium.",
+            name: "Saffron",
+            description: "Premium spice for culinary and nutraceutical use. Antioxidant and mood support.",
+            image: "/products/Nutrients/Saffron.jpeg",
             specs: [
-                { label: "HS Code", value: "121190" },
-                { label: "Forms", value: "Leaf Powder, Dried Leaves" }
+                { label: "HS Code", value: "091020" },
+                { label: "Active", value: "Crocin, Safranal" }
+            ]
+        },
+        {
+            name: "Dehydrated Vegetables",
+            description: "Various dehydrated vegetable products for food processing.",
+            image: "/products/Nutrients/Dehydrated-vegetables.jpg",
+            specs: [
+                { label: "Use", value: "Instant Foods, Soups" },
+                { label: "Grade", value: "Food Grade" }
             ]
         }
     ];
 
     const whySource = [
-        "India is a globally established origin for spices & botanical ingredients.",
-        "Agro-climatic diversity ensuring high quality.",
-        "Processing depth and export compliance maturity.",
-        "Supply continuity and batch consistency."
+        "India is a global leader in Fox Nut (Makhana) production.",
+        "Strong plant-based protein manufacturing base.",
+        "Consistency in batch quality and moisture control.",
+        "Export-grade bulk packaging (bags, drums, cartons)."
     ];
 
-    const overview = `Why Buyers Source from us and India:
-  India is a globally established origin for spices, botanical ingredients, and plant-based functional food inputs due to its agro-climatic diversity, processing depth, and export compliance maturity.
+    const overview = `We supply **Specialised Agro-Commodities** focusing on high-value, functional food ingredients like **Makhana, Pea Protein, and Saffron**.
   
-  We supply **Makhana (Fox Nuts)**, **Spices (Saffron, Chilli Oleoresin)**, and **Plant-Based Functional Ingredients (Pea Protein, Moringa)** to food manufacturers, nutraceutical companies, and bulk distributors.`;
+  **Focus**: Healthy snacking, plant-based nutrition, and premium spices.
+  **Execution**: Batch-wise processing, grading, and strict moisture control for international shipment.`;
 
     return (
         <ExportPageTemplate
-            title="Spices, Food & Functional Ingredients"
-            subtitle="Exotic Spices, Makhana (Fox Nuts), and Plant-Based Functional Ingredients."
+            title="Specialised Agro - Makhana & Saffron"
+            subtitle="Fox Nuts, Plant Proteins, and Premium Agro Commodities."
             overview={overview}
             products={products}
             whySource={whySource}

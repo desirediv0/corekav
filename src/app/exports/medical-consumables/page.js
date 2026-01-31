@@ -1,80 +1,83 @@
 import ExportPageTemplate from '@/components/ExportPageTemplate';
 
 export const metadata = {
-    title: 'Human Medical Consumables Exporter India | HS Code 401511',
-    description: 'Supplying Essential Hospital & Healthcare Disposables Across Global Institutional Markets.',
+    title: 'Human Medical Consumables Exporter India',
+    description: 'Hospital disposables, syringes, gloves, and diagnostic consumables.',
 };
 
-export default function Medical() {
+export default function MedicalConsumables() {
+    // Client images: save to public/products/medical/ (see CLIENT_IMAGES_PLACEMENT.md)
     const products = [
         {
             name: "Disposable Medical Syringes",
-            description: "Single-use disposable medical syringes (Luer lock / Luer slip) for routine hospital and clinical use.",
+            description: "Single-use syringes (Luer Lock/Slip) for hospital and clinical use.",
+            image: "/products/medical/Disposable-Medical-Syringes.jpeg",
             specs: [
-                { label: "Format", value: "Luer Lock / Slip" },
-                { label: "Source", value: "Compliant Mfg" }
+                { label: "HS Code", value: "901831" },
+                { label: "Type", value: "Disposable" }
             ]
         },
         {
             name: "Sterile Hypodermic Needles",
-            description: "Sterile needles suitable for clinical, vaccination, and diagnostic use. Bulk supply for hospitals & immunization.",
+            description: "Bulk sterile needles for clinical, vaccination, and diagnostic use.",
+            image: "/products/medical/Hypodermic-Needles.jpeg",
             specs: [
-                { label: "Use", value: "Clinical / Vaccination" },
+                { label: "Use", value: "Clinical / Immunization" },
                 { label: "Sterility", value: "EO Sterile" }
             ]
         },
         {
             name: "IV Sets & Cannulae",
-            description: "IV infusion sets, IV cannulae, and flow regulators used in inpatient and emergency care.",
+            description: "IV infusion sets, flow regulators, and IV cannulae for patient care.",
+            image: "/products/medical/IV-Infusion-Sets-Cannulae.jpg",
             specs: [
-                { label: "Items", value: "Sets, Cannulae, Regulators" },
-                { label: "Target", value: "Emergency / Inpatient" }
+                { label: "Application", value: "Infusion / Emergency" },
+                { label: "Type", value: "Disposable" }
             ]
         },
         {
-            name: "Latex & Nitrile Gloves",
-            description: "High-rotation exam gloves (Latex & Nitrile) supplied in large volumes for medical and diagnostic use.",
+            name: "Examination Gloves",
+            description: "Latex and Nitrile examination gloves for medical and specific handling.",
+            image: "/products/medical/Examination-Gloves.jpeg",
             specs: [
-                { label: "Material", value: "Latex / Nitrile" },
-                { label: "Volume", value: "High Rotation" }
+                { label: "HS Code", value: "401511" },
+                { label: "Material", value: "Latex / Nitrile" }
             ]
         },
         {
-            name: "Wound Care Consumables",
-            description: "Essential wound care products including Sterile gauze, Adhesive bandages, and Dressing materials.",
+            name: "Diagnostic Labware",
+            description: "Blood collection tubes, specimen trays, and basic laboratory plastics.",
+            image: "/products/medical/Diagnostic-Lab-Consumables.png",
             specs: [
-                { label: "Items", value: "Gauze, Bandages" },
-                { label: "Application", value: "Clinical Care" }
-            ]
-        },
-        {
-            name: "Labware & Diagnostics",
-            description: "Specimen trays, sample containers, blood collection tubes, and basic lab plastics.",
-            specs: [
-                { label: "Items", value: "Tubes, Containers" },
-                { label: "Use", value: "Pathology / Lab" }
+                { label: "Use", value: "Pathology / Diagnostics" },
+                { label: "Material", value: "Medical Grade Plastic" }
             ]
         }
     ];
 
     const whySource = [
-        "Large-scale, compliant production capacity.",
-        "Competitive pricing for bulk procurement.",
+        "Reliable manufacturing base for compliant medical disposables.",
+        "Competitive pricing for bulk institutional procurement.",
         "Familiarity with international hospital usage standards.",
         "Ability to supply continuous volumes for public health systems."
     ];
 
-    const overview = `We are an India-based exporter of human medical consumables and hospital-use disposables, supplying to hospitals, clinics, medical distributors, NGOs, and public procurement agencies across South Asia, Middle East (including GCC), Africa, South East Asia, Central Asia, and select emerging markets.
+    const overview = `We are an **India-based exporter of human medical consumables**, supplying to hospitals, clinics, NGOs, and public procurement agencies.
+  
+  **Focus**: Essential, high-volume products sourced from compliant manufacturers.
+  **Execution**: Structured export documentation and disciplined commercial terms for institutional buyers.`;
 
-  Our exports focus on essential, high-volume medical products sourced from compliant Indian manufacturers, supplied under structured export documentation. **We do not operate as a retail brand; we function as a reliable institutional export supplier.**`;
+
 
     return (
         <ExportPageTemplate
             title="Human Medical Consumables"
-            subtitle="Supplying Essential Hospital & Healthcare Disposables Across Global Institutional Markets. HS Code 401511."
+            subtitle="Essential hospital disposables and healthcare products."
             overview={overview}
             products={products}
             whySource={whySource}
-        />
+        >
+
+        </ExportPageTemplate>
     );
 }

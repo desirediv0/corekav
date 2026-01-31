@@ -1,37 +1,41 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
-    const [isExportsOpen, setIsExportsOpen] = useState(false);
+    const [isWhatWeDoOpen, setIsWhatWeDoOpen] = useState(false);
 
-    const exportLinks = [
-        { name: 'Animal Feed', href: '/exports/animal-feed' },
-        { name: 'Veterinary', href: '/exports/veterinary-animal-husbandry-consumables' },
-        { name: 'Medical', href: '/exports/medical-consumables' },
-        { name: 'Industrial', href: '/exports/industrial-electrical-components' },
-        { name: 'Spices & Food', href: '/exports/makhana-fox-nuts-lotus-seeds' },
-        { name: 'Nutraceuticals', href: '/exports/herbal-nutraceutical-ayurveda-ingredients' },
-        { name: 'Carbon & ESG', href: '/exports/carbon-credits-esg-climate-solutions' },
+
+    const whatWeDoLinks = [
+        { name: 'Nutraceutical, Herbal & Ayurveda', href: '/exports/herbal-nutraceutical-ayurveda-ingredients' },
+        { name: 'Food, Spices & Plant-Based', href: '/exports/food-spices-plant-based' },
+        { name: 'Specialised Agro (Makhana, Saffron)', href: '/exports/makhana-fox-nuts-lotus-seeds' },
+        { name: 'Animal Feed & Nutrition', href: '/exports/animal-feed' },
+        { name: 'Veterinary & Animal Husbandry', href: '/exports/veterinary-animal-husbandry-consumables' },
+        { name: 'Human Medical Consumables', href: '/exports/medical-consumables' },
+        { name: 'Industrial & Electrical', href: '/exports/industrial-electrical-components' },
     ];
 
     return (
         <header className="sticky top-0 z-50 w-full bg-primary text-neutral shadow-lg border-b border-white/5">
             <div className="max-w-7xl mx-auto px-4 md:px-6">
-                <div className="flex items-center justify-between h-20">
-                    {/* Logo */}
-                    <Link href="/" className="flex flex-col items-start group">
-                        <span className="text-2xl font-serif font-bold text-secondary tracking-wide group-hover:opacity-90 transition-opacity">
-                            COREKAV
-                        </span>
-                        <span className="text-[10px] font-sans tracking-[0.2em] uppercase text-neutral/70">
-                            International Trade
-                        </span>
+                <div className="flex items-center justify-between h-24">
+
+                    <Link href="/" className="flex items-center gap-3 group">
+                        <Image
+                            src="/logo.png"
+                            alt="CoreKAV International Trade"
+                            width={200}
+                            height={200}
+                            className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
+                            priority
+                        />
+
                     </Link>
 
-                    {/* Desktop Nav */}
                     <nav className="hidden lg:flex space-x-8 items-center">
                         <Link
                             href="/"
@@ -40,23 +44,16 @@ const Header = () => {
                             Home
                         </Link>
 
-                        <Link
-                            href="/about"
-                            className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
-                        >
-                            About Us
-                        </Link>
-
-                        {/* Dropdown for Exports */}
                         <div className="relative group">
                             <button
                                 className="flex items-center gap-1 text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90 focus:outline-none"
                             >
-                                Exports <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
+                                What We Do <ChevronDown size={14} className="group-hover:rotate-180 transition-transform" />
                             </button>
-                            <div className="absolute top-full -left-4 w-60 bg-primary border border-white/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pt-2">
+                            <div className="absolute top-full -left-4 w-72 bg-primary border border-white/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0 pt-2">
                                 <div className="flex flex-col bg-primary py-2 rounded-sm shadow-2xl">
-                                    {exportLinks.map((link) => (
+                                    <p className="px-6 py-2 text-[10px] uppercase tracking-widest text-neutral/50 border-b border-white/5">Export &amp; services</p>
+                                    {whatWeDoLinks.map((link) => (
                                         <Link
                                             key={link.name}
                                             href={link.href}
@@ -70,10 +67,31 @@ const Header = () => {
                         </div>
 
                         <Link
+                            href="/exports/carbon-credits-esg-climate-solutions"
+                            className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
+                        >
+                            Carbon &amp; ESG
+                        </Link>
+
+                        <Link
+                            href="/about"
+                            className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
+                        >
+                            Who We Are
+                        </Link>
+
+                        <Link
+                            href="/faq"
+                            className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
+                        >
+                            FAQ
+                        </Link>
+
+                        <Link
                             href="/markets-and-contact"
                             className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
                         >
-                            Markets & Contact
+                            Markets &amp; Contact
                         </Link>
 
                         <Link
@@ -105,26 +123,19 @@ const Header = () => {
                         >
                             Home
                         </Link>
-                        <Link
-                            href="/about"
-                            onClick={() => setIsOpen(false)}
-                            className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
-                        >
-                            About Us
-                        </Link>
 
-                        {/* Mobile Dropdown */}
+                        {/* Mobile: What We Do dropdown */}
                         <div>
                             <button
-                                onClick={() => setIsExportsOpen(!isExportsOpen)}
+                                onClick={() => setIsWhatWeDoOpen(!isWhatWeDoOpen)}
                                 className="flex items-center justify-between w-full text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider border-b border-white/5 pb-2 focus:outline-none"
                             >
-                                Exports <ChevronDown size={14} className={`transition-transform ${isExportsOpen ? 'rotate-180' : ''}`} />
+                                What We Do <ChevronDown size={14} className={`transition-transform ${isWhatWeDoOpen ? 'rotate-180' : ''}`} />
                             </button>
 
-                            {isExportsOpen && (
+                            {isWhatWeDoOpen && (
                                 <div className="pl-4 mt-2 space-y-2 border-l border-white/10 ml-1">
-                                    {exportLinks.map((link) => (
+                                    {whatWeDoLinks.map((link) => (
                                         <Link
                                             key={link.name}
                                             href={link.href}
@@ -137,6 +148,30 @@ const Header = () => {
                                 </div>
                             )}
                         </div>
+
+                        <Link
+                            href="/exports/carbon-credits-esg-climate-solutions"
+                            onClick={() => setIsOpen(false)}
+                            className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
+                        >
+                            Carbon &amp; ESG
+                        </Link>
+
+                        <Link
+                            href="/about"
+                            onClick={() => setIsOpen(false)}
+                            className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
+                        >
+                            Who We Are
+                        </Link>
+
+                        <Link
+                            href="/faq"
+                            onClick={() => setIsOpen(false)}
+                            className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
+                        >
+                            FAQ
+                        </Link>
 
                         <Link
                             href="/markets-and-contact"

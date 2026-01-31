@@ -2,57 +2,63 @@ import ExportPageTemplate from '@/components/ExportPageTemplate';
 
 export const metadata = {
     title: 'Animal Feed Exporter India | Compound Feed & Concentrates',
-    description: 'Supplying Compound Feed, Concentrates & Nutritional Products to Global Livestock Markets. HS Code 230990.',
+    description: 'Bulk compound feed, mineral mixtures, and nutritional concentrates for livestock.',
 };
 
 export default function AnimalFeed() {
     const products = [
         {
-            name: "Mineral & Vitamin Blend",
-            description: "Balanced macro & trace minerals for Dairy cattle, buffalo, sheep & goat. Improves milk yield & fertility.",
+            name: "Mineral & Vitamin Premix",
+            description: "Balanced macro & trace minerals for dairy cattle, sheep & goat. Improves milk yield.",
+            image: "/products/animal-feed/Mineral-Vitamin-Premix.jpg",
             specs: [
-                { label: "Form", value: "Powder / Granules" },
-                { label: "Application", value: "Milk yield & fertility support" }
+                { label: "Use", value: "Dairy, Small Ruminants" },
+                { label: "Form", value: "Powder / Granules" }
             ]
         },
         {
             name: "Specialty Mineral Premix",
-            description: "Chelated Zinc, Copper, Manganese for high-yield dairy & breeder animals. Higher bioavailability.",
+            description: "High-bioavailability chelated minerals for high-yielding dairy and breeder animals.",
+            image: "/products/animal-feed/Specialty-Mineral-Premix.jpg",
             specs: [
-                { label: "Form", value: "Powder" },
-                { label: "Key", value: "Stress & immunity support" }
+                { label: "Benefit", value: "Immunity & Stress Support" },
+                { label: "Form", value: "Powder" }
             ]
         },
         {
-            name: "High-Protein Feed Block",
-            description: "~20% CP. Ideal for fodder-deficit regions. Improves rumen efficiency for Cattle, buffalo, sheep, goats.",
+            name: "Protein & Mineral Feed Blocks",
+            description: "Solid lick blocks (~20% protein) for rumen efficiency and fodder-deficit regions.",
+            image: "/products/animal-feed/Protein-Mineral-Feed-Blocks.jpg",
             specs: [
-                { label: "Form", value: "Solid lick blocks" },
-                { label: "Protein", value: "~20% CP" }
+                { label: "Use", value: "Cattle, Buffalo, Sheep" },
+                { label: "Form", value: "Solid Block" }
             ]
         },
         {
-            name: "Molasses-Based Energy Concentrates",
-            description: "Liquid/Semi-solid quick energy source for Dairy cattle & buffalo. Enhances milk production.",
+            name: "Molasses Mineral Block",
+            description: "Energy-rich solid blocks to prevent weight loss during dry seasons and improve palatability.",
+            image: "/products/animal-feed/Molasses-Mineral-Block.jpg",
             specs: [
-                { label: "Form", value: "Liquid / Semi-solid" },
-                { label: "Benefit", value: "Quick energy source" }
+                { label: "Benefit", value: "Energy Supplementation" },
+                { label: "Form", value: "Solid Block" }
             ]
         },
         {
             name: "Lactation Concentrate",
-            description: "Pellets/Mash for High-yield dairy cows. Supports peak lactation and milk volume.",
+            description: "Pelleted concentrate with balanced protein-energy ratio for peak lactation support.",
+            image: "/products/animal-feed/Lactation-Concentrate.jpg",
             specs: [
-                { label: "Form", value: "Pellets / Mash" },
-                { label: "Use", value: "Peak lactation support" }
+                { label: "Use", value: "High-yield Dairy Cows" },
+                { label: "Form", value: "Pellets / Mash" }
             ]
         },
         {
-            name: "Complete Compound Feed",
-            description: "Finished feed pellets/flakes for Poultry, Cattle, Buffalo, Sheep, Goat, Swine and Aquaculture.",
+            name: "Digestive Feed Supplement",
+            description: "Gut health enhancer to improve nutrient absorption and reduce feed wastage.",
+            image: "/products/animal-feed/Digestive-Feed-Supplement.jpg",
             specs: [
-                { label: "Types", value: "Cattle, Poultry, Aqua, Swine" },
-                { label: "Packaging", value: "Bulk / Bagged" }
+                { label: "Benefit", value: "Gut Health" },
+                { label: "Form", value: "Powder / Liquid" }
             ]
         }
     ];
@@ -60,23 +66,25 @@ export default function AnimalFeed() {
     const whySource = [
         "Strong agricultural raw material base.",
         "Cost-efficient feed manufacturing at scale.",
-        "Ability to customize formulations for different species.",
-        "Experience in supplying import-dependent markets."
+        "Ability to customize formulations for different species and climates.",
+        "Experience in supplying import-dependent livestock markets."
     ];
 
-    const overview = `We are an India-based animal feed exporter supplying finished compound feed, concentrates, supplements, and bio-processed feed products to institutional buyers across South Asia, Middle East (including GCC), Africa, South East Asia, Central Asia, and select emerging markets.
-
-  Our exports are designed for commercial livestock farms, poultry integrators, aquaculture operators, cooperatives, distributors, and government procurement agencies. ALL products are supplied in containerized bulk or bagged formats, aligned with buyer specifications.
+    const overview = `We are an **India-based animal feed exporter** supplying finished compound feed, concentrates, supplements, and bio-processed feed products to institutional buyers.
   
-  **We operate as a bulk export supplier, not a retail or branded feed seller.**`;
+  **Markets Served**: South Asia, Middle East (GCC), Africa, South East Asia.
+  **Our Role**: Bulk export supplier for commercial farms, integrators, and government agencies. We do not sell retail branded feed.`;
+
+
 
     return (
         <ExportPageTemplate
-            title="Animal Feed Export"
-            subtitle="Supplying Compound Feed, Concentrates & Nutritional Products to Global Livestock Markets. HS Code 230990."
+            title="Animal Feed Supplements & Nutritional Concentrates"
+            subtitle="Compound feed, mineral mixtures, and nutritional solutions for livestock."
             overview={overview}
             products={products}
             whySource={whySource}
-        />
+        >
+        </ExportPageTemplate>
     );
 }
