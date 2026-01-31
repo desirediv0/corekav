@@ -26,6 +26,7 @@ export default function Home() {
         variant="home"
         ctaText="View Products"
         ctaLink="#what-we-do"
+        bgImage="/home-hero-bg.jpg"
       />
 
       {/* Intro Text */}
