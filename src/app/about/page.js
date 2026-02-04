@@ -16,10 +16,10 @@ export default function About() {
             />
 
             <SectionWrapper className="bg-white">
-                <div className="max-w-4xl mx-auto space-y-12 text-primary/80">
+                <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12 text-primary/80">
 
-                    <div className="prose prose-lg max-w-none">
-                        <p className="text-xl leading-relaxed">
+                    <div className="prose prose-sm sm:prose max-w-none text-sm sm:text-base">
+                        <p className="text-base sm:text-lg md:text-xl leading-relaxed">
                             We are an India-based, professionally managed export company supporting institutional buyers with reliable, repeat-ready supply of essential, high-rotation products.
                         </p>
                         <p>
@@ -33,30 +33,30 @@ export default function About() {
                         </p>
                     </div>
 
-                    <div className="bg-neutral/30 p-8 rounded-2xl border border-secondary/10">
-                        <h2 className="text-2xl font-serif font-bold text-primary mb-6">Our Export Philosophy</h2>
-                        <p className="text-lg text-primary/90 mb-4">Quality Consistency. Documentation Discipline. Pricing Transparency. Delivery Reliability.</p>
-                        <ul className="space-y-3 list-disc pl-5">
+                    <div className="bg-neutral/30 p-6 sm:p-8 rounded-2xl border border-secondary/10">
+                        <h2 className="text-xl sm:text-2xl font-serif font-bold text-primary mb-4 sm:mb-6">Our Export Philosophy</h2>
+                        <p className="text-base sm:text-lg text-primary/90 mb-4">Quality Consistency. Documentation Discipline. Pricing Transparency. Delivery Reliability.</p>
+                        <ul className="space-y-2 sm:space-y-3 list-disc pl-5 text-sm sm:text-base">
                             <li>We focus on fewer, carefully selected markets to ensure control, compliance, and consistent execution.</li>
                             <li>We operate within clearly defined product categories, managing them deeply rather than broadly, to maintain quality and supply stability.</li>
                             <li>Our approach prioritizes repeat, program-based procurement relationships—designed for institutional buyers who value predictability, continuity, and long-term supply assurance.</li>
                         </ul>
                     </div>
 
-                    <div className="grid md:grid-cols-2 gap-8">
+                    <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
                         <div>
-                            <h3 className="text-xl font-bold text-primary mb-4">Payment Structures & Risk</h3>
-                            <p className="mb-4">We operate under bankable, export-safe payment terms:</p>
-                            <ul className="space-y-2 list-disc pl-5 text-sm">
+                            <h3 className="text-lg sm:text-xl font-bold text-primary mb-3 sm:mb-4">Payment Structures & Risk</h3>
+                            <p className="mb-4 text-sm sm:text-base">We operate under bankable, export-safe payment terms:</p>
+                            <ul className="space-y-2 list-disc pl-5 text-xs sm:text-sm">
                                 <li>Advance Payment</li>
                                 <li>Documents Against Payment (DP)</li>
                                 <li>Letter of Credit (LC) for established buyers</li>
                             </ul>
                         </div>
                         <div>
-                            <h3 className="text-xl font-bold text-primary mb-4">Export Execution</h3>
-                            <p className="mb-4">Structured around traceability and compliance:</p>
-                            <ul className="space-y-2 list-disc pl-5 text-sm">
+                            <h3 className="text-lg sm:text-xl font-bold text-primary mb-3 sm:mb-4">Export Execution</h3>
+                            <p className="mb-4 text-sm sm:text-base">Structured around traceability and compliance:</p>
+                            <ul className="space-y-2 list-disc pl-5 text-xs sm:text-sm">
                                 <li>Source-verified raw materials</li>
                                 <li>Batch-wise processing & grading</li>
                                 <li>Export-grade packaging (drums, bags, cartons)</li>
@@ -66,8 +66,8 @@ export default function About() {
                     </div>
 
                     <div>
-                        <h3 className="text-xl font-bold text-primary mb-6">Markets We Serve</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-sm">
+                        <h3 className="text-lg sm:text-xl font-bold text-primary mb-4 sm:mb-6">Markets We Serve</h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 text-xs sm:text-sm">
                             <div>
                                 <strong className="block text-secondary mb-1">South Asia</strong>
                                 <p>Bangladesh, Nepal, Sri Lanka, Bhutan, Maldives</p>

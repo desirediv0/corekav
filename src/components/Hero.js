@@ -50,20 +50,20 @@ const Hero = ({
             <div className="relative z-30 max-w-7xl mx-auto text-center">
                 <div className={`mx-auto space-y-6 md:space-y-8 animate-fade-in-up ${isHome ? 'max-w-5xl' : 'max-w-4xl'}`}>
 
-                    {/* Title */}
-                    <h1 className={`font-serif font-bold text-neutral leading-tight tracking-wide
-                    ${isHome ? 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-2xl' : 'text-3xl md:text-5xl lg:text-5xl'}
+                    {/* Title - smaller, responsive, no overflow */}
+                    <h1 className={`font-serif font-bold text-neutral leading-snug tracking-wide
+                    ${isHome ? 'text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl drop-shadow-2xl max-w-4xl mx-auto' : 'text-2xl sm:text-3xl md:text-4xl lg:text-4xl'}
                 `}>
                         {title}
                     </h1>
 
                     {/* Separator */}
-                    <div className={`h-1 bg-secondary mx-auto rounded-full ${isHome ? 'w-32' : 'w-20'}`} />
+                    <div className={`h-1 bg-secondary mx-auto rounded-full ${isHome ? 'w-24 sm:w-32' : 'w-16 sm:w-20'}`} />
 
-                    {/* Subtitle */}
+                    {/* Subtitle - responsive */}
                     {subtitle && (
                         <p className={`text-neutral/90 font-light leading-relaxed mx-auto
-                        ${isHome ? 'text-lg md:text-xl max-w-3xl' : 'text-base md:text-lg max-w-2xl'}
+                        ${isHome ? 'text-sm sm:text-base md:text-lg max-w-3xl px-1' : 'text-sm sm:text-base md:text-lg max-w-2xl'}
                     `}>
                             {subtitle}
                         </p>

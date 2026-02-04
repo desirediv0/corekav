@@ -61,22 +61,22 @@ export default function MarketsContact() {
             />
 
             <SectionWrapper className="bg-white">
-                <h2 className="text-3xl font-serif font-bold text-primary text-center mb-12">Markets We Serve</h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <h2 className="text-2xl sm:text-3xl font-serif font-bold text-primary text-center mb-8 sm:mb-12 px-2">Markets We Serve</h2>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {markets.map((m, i) => (
-                        <div key={i} className="bg-neutral-50 p-6 border border-neutral-100 rounded-sm hover:border-secondary transition-colors">
-                            <Globe className="text-secondary mb-3" size={24} />
-                            <h4 className="font-bold text-primary mb-2 uppercase tracking-wider text-sm">{m.region}</h4>
-                            <p className="text-sm text-primary/70 leading-relaxed">{m.countries}</p>
+                        <div key={i} className="bg-neutral-50 p-4 sm:p-6 border border-neutral-100 rounded-sm hover:border-secondary transition-colors">
+                            <Globe className="text-secondary mb-2 sm:mb-3" size={22} />
+                            <h4 className="font-bold text-primary mb-2 uppercase tracking-wider text-xs sm:text-sm">{m.region}</h4>
+                            <p className="text-xs sm:text-sm text-primary/70 leading-relaxed">{m.countries}</p>
                         </div>
                     ))}
                 </div>
             </SectionWrapper>
 
             <SectionWrapper className="bg-primary text-neutral">
-                <div className="grid lg:grid-cols-2 gap-16">
+                <div className="grid lg:grid-cols-2 gap-10 sm:gap-16">
                     <div>
-                        <h2 className="text-3xl font-serif font-bold mb-8">Contact Us</h2>
+                        <h2 className="text-2xl sm:text-3xl font-serif font-bold mb-6 sm:mb-8">Contact Us</h2>
                         <div className="space-y-6 sm:space-y-8">
                             <div className="flex gap-4">
                                 <MapPin className="text-secondary flex-shrink-0 mt-0.5" size={24} />
@@ -130,7 +130,7 @@ export default function MarketsContact() {
             </SectionWrapper>
 
             <SectionWrapper className="bg-neutral-50" id="faq">
-                <h2 className="text-3xl font-serif font-bold text-primary text-center mb-12">Frequently Asked Questions</h2>
+                <h2 className="text-2xl sm:text-3xl font-serif font-bold text-primary text-center mb-8 sm:mb-12 px-2">Frequently Asked Questions</h2>
                 <FAQAccordion items={faqs} />
             </SectionWrapper>
         </main>

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const ContactCTA = () => {
     return (
-        <section className="py-24 bg-primary text-neutral text-center px-4 relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-primary text-neutral text-center px-4 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none"
                 style={{
                     backgroundImage: 'radial-gradient(circle at 50% 50%, #C9A24D 1px, transparent 1px)',
@@ -12,15 +12,15 @@ const ContactCTA = () => {
             />
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-secondary/5 blur-[100px] rounded-full pointer-events-none" />
 
-            <div className=" mx-auto max-w-4xl relative z-10">
-                <span className="block text-secondary text-sm font-bold uppercase tracking-[0.2em] mb-4 animate-fade-in">
+            <div className="mx-auto max-w-4xl relative z-10 px-1">
+                <span className="block text-secondary text-xs sm:text-sm font-bold uppercase tracking-[0.2em] mb-3 sm:mb-4 animate-fade-in">
                     Partner With COREKAV
                 </span>
-                <h2 className="text-3xl md:text-5xl font-serif font-bold mb-8 leading-tight">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold mb-6 sm:mb-8 leading-tight">
                     Reliable Supply Chain Solutions for Global Buyers
                 </h2>
-                <div className="h-px w-24 bg-secondary/30 mx-auto mb-8" />
-                <p className="text-lg text-neutral/80 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                <div className="h-px w-24 bg-secondary/30 mx-auto mb-6 sm:mb-8" />
+                <p className="text-sm sm:text-base md:text-lg text-neutral/80 mb-8 sm:mb-12 max-w-2xl mx-auto font-light leading-relaxed">
                     Initiate a trade inquiry or request a detailed product catalog. Our export desk responds within 24 hours.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-stretch sm:items-center">

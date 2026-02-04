@@ -31,10 +31,10 @@ export default function Home() {
 
       {/* WHAT WE DO – Export & Services (infographic-style, LDC-inspired) */}
       <SectionWrapper id="what-we-do" className="bg-neutral/20">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 sm:mb-12">
           <span className="text-xs font-bold uppercase tracking-[0.3em] text-secondary">Export &amp; Services</span>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-primary mt-2 mb-4">What We Do</h2>
-          <p className="text-primary/70 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mt-2 mb-3 sm:mb-4">What We Do</h2>
+          <p className="text-sm sm:text-base text-primary/70 max-w-2xl mx-auto px-1">
             We responsibly source, transform, and deliver essential products across agriculture, nutrition, healthcare, and infrastructure to institutional buyers worldwide.
           </p>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
       {/* Global Markets – Alternate Background (Midnight Blue #0A2540) */}
       <SectionWrapper className="bg-primary-light text-neutral overflow-hidden">
         <div className="relative z-10">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16">Global Markets We Serve</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-center mb-10 sm:mb-16 px-2">Global Markets We Serve</h2>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
             <MarketItem name="South and South East Asia" />
@@ -114,7 +114,7 @@ export default function Home() {
           </div>
 
           <div className="mt-20 max-w-3xl mx-auto text-center border-t border-white/10 pt-10 px-4 sm:px-0">
-            <p className="text-base sm:text-xl font-light opacity-90 mb-8">
+            <p className="text-sm sm:text-base md:text-lg font-light opacity-90 mb-6 sm:mb-8 px-1">
               If you are an importer, distributor, EPC contractor, or institutional buyer seeking a stable and compliant Indian export supplier, we welcome structured discussions.
             </p>
             <div className="inline-block w-full max-w-md p-4 sm:p-6 border border-secondary rounded-xl bg-white/5 backdrop-blur-sm text-left">
@@ -160,9 +160,9 @@ const ServiceCard = ({ title, desc, icon: Icon, image, href }) => (
         <Icon size={24} className="text-primary group-hover:text-white" />
       </div>
     )}
-    <div className="p-6">
-      <h3 className="text-xl font-bold text-primary mb-3 group-hover:text-secondary transition-colors">{title}</h3>
-      <p className="text-primary/60 text-sm leading-relaxed mb-6">{desc}</p>
+    <div className="p-4 sm:p-6">
+      <h3 className="text-base sm:text-lg md:text-xl font-bold text-primary mb-2 sm:mb-3 group-hover:text-secondary transition-colors">{title}</h3>
+      <p className="text-primary/60 text-xs sm:text-sm leading-relaxed mb-4 sm:mb-6">{desc}</p>
       <div className="flex items-center text-secondary text-sm font-bold tracking-wider uppercase group-hover:translate-x-1 transition-transform">
         Explore <ArrowRight size={16} className="ml-2" />
       </div>
@@ -171,10 +171,10 @@ const ServiceCard = ({ title, desc, icon: Icon, image, href }) => (
 );
 
 const MarketItem = ({ name }) => (
-  <div className="flex flex-col items-center gap-4">
-    <div className="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center">
-      <Globe className="text-secondary" />
+  <div className="flex flex-col items-center gap-3 sm:gap-4">
+    <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-white/10 flex items-center justify-center shrink-0">
+      <Globe className="text-secondary" size={20} />
     </div>
-    <span className="font-bold tracking-wide">{name}</span>
+    <span className="font-bold tracking-wide text-xs sm:text-sm md:text-base text-center leading-tight">{name}</span>
   </div>
 );
