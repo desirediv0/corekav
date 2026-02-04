@@ -5,39 +5,29 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { ArrowRight, Leaf, Globe, ShieldCheck, Factory, Zap, Stethoscope, Sprout } from 'lucide-react';
 
-// Client images: category collages in /public (nutra, animal-feed, industrial, medical, veterinary, etc.)
+// What We Do cards – wahi banner images jo har export page par use ho rahe hain
 const WHAT_WE_DO_CARD_IMAGES = {
-  nutraceutical: '/products/herbal/Ashwagandha-Extract.png',
-  foodSpices: '/products/agro/Paprika-Oleoresin.jpg',
-  agro: '/products/Nutrients/Makhana.jpeg',
-  animalFeed: '/products/animal-feed/Lactation-Concentrate.jpg',
-  veterinary: '/products/veterinary/Vet-Grade-Disposable-Syringes.jpeg',
-  medical: '/products/medical/Disposable-Medical-Syringes.jpeg',
-  industrial: '/products/industrial/IP-Rated-Inverter-Enclosures.png',
-  carbon: '/esg-hero.jpg',
+  nutraceutical: '/Banner1. Nutraceutical, Herbal Extracts & Ayurveda Ingredients.png',
+  foodSpices: '/Banner 2. Food, Spices & Plant-Based Ingredients .png',
+  agro: '/Banner 3. Makhana, Dried Veg, Saffron .png',
+  animalFeed: '/Banner 4. Animal Feed Supplements & Nutritional Concentrates.png',
+  veterinary: '/Banner 5. Veterinary & Animal Husbandry.png',
+  medical: '/Banner 6 Human Medical Consumables .png',
+  industrial: '/Banner 7. Electrical, Industrial & Renewable Energy Components.png',
+  carbon: '/Banner 8. Carbon .png',
 };
 
 export default function Home() {
   return (
     <main>
       <Hero
-        title="CoreKAV International Trade"
-        subtitle="Institutional Export Supply Chain Partner From India"
+        title="India-Based Export And Supply Chain Partner Supplying Nutraceutical, Nutritional, Specialised Agro, Makhana (Fox Nut), And Animal Feed Commodities For Institutional Buyers"
+        subtitle="Supplying verified, compliant and scalable products to global markets across food, specialised agro (makhana), nutraceuticals, human and veterinary medical consumables, and electrical energy components."
         variant="home"
         ctaText="View Products"
         ctaLink="#what-we-do"
-        bgImage="/home-hero-bg.jpg"
+        bgImage="/Master Banners front page .png"
       />
-
-      {/* Intro Text */}
-      <SectionWrapper className="bg-white text-center">
-        <div className="max-w-4xl mx-auto space-y-6">
-          <h2 className="text-2xl md:text-3xl font-serif font-bold text-primary">Supplying Essential Products to Global Markets</h2>
-          <p className="text-lg text-primary/70 leading-relaxed">
-            Supplying essential products across nutraceutical, herbal extracts & ayurveda ingredients, food, spices & plant-based ingredients, specialised agro (makhana, saffron), animal feed supplements & nutritional concentrates, veterinary & animal husbandry consumables, human medical consumables, and electrical, industrial & renewable energy components to import-dependent global markets.
-          </p>
-        </div>
-      </SectionWrapper>
 
       {/* WHAT WE DO – Export & Services (infographic-style, LDC-inspired) */}
       <SectionWrapper id="what-we-do" className="bg-neutral/20">
@@ -99,8 +89,8 @@ export default function Home() {
             href="/exports/industrial-electrical-components"
           />
           <ServiceCard
-            title="Carbon &amp; ESG"
-            desc="Carbon credit trading, project aggregation, and ESG-aligned advisory."
+            title="Carbon &amp; Sustainability"
+            desc="Carbon credit trading, project aggregation, and sustainability advisory."
             icon={Globe}
             image={WHAT_WE_DO_CARD_IMAGES.carbon}
             href="/exports/carbon-credits-esg-climate-solutions"
@@ -114,24 +104,34 @@ export default function Home() {
         <div className="relative z-10">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16">Global Markets We Serve</h2>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 text-center">
-            <MarketItem name="South Asia" />
-            <MarketItem name="Middle East & GCC" />
-            <MarketItem name="Africa" />
-            <MarketItem name="South East Asia" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+            <MarketItem name="South and South East Asia" />
             <MarketItem name="Central Asia" />
+            <MarketItem name="Middle East and GCC" />
+            <MarketItem name="Africa" />
+            <MarketItem name="USA" />
+            <MarketItem name="Latin America and Caribbean" />
           </div>
 
-          <div className="mt-20 max-w-3xl mx-auto text-center border-t border-white/10 pt-10">
-            <p className="text-xl font-light opacity-90 mb-8">
+          <div className="mt-20 max-w-3xl mx-auto text-center border-t border-white/10 pt-10 px-4 sm:px-0">
+            <p className="text-base sm:text-xl font-light opacity-90 mb-8">
               If you are an importer, distributor, EPC contractor, or institutional buyer seeking a stable and compliant Indian export supplier, we welcome structured discussions.
             </p>
-            <div className="inline-block p-6 border border-secondary rounded-xl bg-white/5 backdrop-blur-sm text-left">
-              <h3 className="font-bold text-secondary text-lg mb-2">Contact Us</h3>
-              <p className="font-semibold text-neutral">CoreKAV International Trade</p>
-              <p>B-39, 1st Floor, Middle Cir, Connaught Place, New Delhi, India 110001</p>
-              <p>Mobile/WhatsApp: +91-9319337377</p>
-              <p>Email: info@corekav.com</p>
+            <div className="inline-block w-full max-w-md p-4 sm:p-6 border border-secondary rounded-xl bg-white/5 backdrop-blur-sm text-left">
+              <h3 className="font-bold text-secondary text-base sm:text-lg mb-2">Contact Us</h3>
+              <p className="font-semibold text-neutral text-sm sm:text-base">COREKAV International Trade</p>
+              <p className="text-sm sm:text-base text-neutral/90">B-39, 1st Floor, Middle Cir, Connaught Place, New Delhi, India 110001</p>
+              <p className="mt-3">
+                <a href="https://wa.me/919319337377" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary font-bold hover:underline text-sm sm:text-base break-all sm:break-normal">
+                  <Image src="/whatsapp.svg" alt="" width={20} height={20} className="shrink-0" /> WhatsApp: +91-9319337377
+                </a>
+              </p>
+              <p className="mt-2">
+                <a href="mailto:info@corekav.com" className="text-secondary font-bold hover:underline text-sm sm:text-base break-all">Email: info@corekav.com</a>
+              </p>
+              <p className="mt-2">
+                <a href="https://www.corekav.com" target="_blank" rel="noopener noreferrer" className="text-secondary font-bold hover:underline text-sm sm:text-base break-all">www.corekav.com</a>
+              </p>
             </div>
           </div>
 
@@ -148,7 +148,7 @@ const ServiceCard = ({ title, desc, icon: Icon, image, href }) => (
     {image ? (
       <div className="relative h-40 w-full overflow-hidden bg-neutral-100">
         <Image
-          src={image}
+          src={encodeURI(image)}
           alt=""
           fill
           className="object-cover group-hover:scale-105 transition-transform duration-300"

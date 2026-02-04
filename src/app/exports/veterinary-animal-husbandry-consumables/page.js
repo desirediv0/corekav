@@ -52,6 +52,30 @@ export default function Veterinary() {
                 { label: "Material", value: "Latex / Nitrile" },
                 { label: "Use", value: "Examination, Handling" }
             ]
+        },
+        {
+            name: "Surgical Instruments (Forceps, Clamps, Trays)",
+            description: "Basic veterinary surgical and procedural instruments for routine use.",
+            specs: [
+                { label: "Type", value: "Forceps, Clamps, Trays" },
+                { label: "Use", value: "Surgery, Procedures" }
+            ]
+        },
+        {
+            name: "Tubs & Containers (OEM / White-Label)",
+            description: "Plastic and metal accessories for veterinary procedures, storage, and handling.",
+            specs: [
+                { label: "Type", value: "OEM / White-Label" },
+                { label: "Use", value: "Storage, Handling" }
+            ]
+        },
+        {
+            name: "Sample Collection Tubes & Veterinary Labware",
+            description: "Consumables for diagnostic sampling and basic veterinary laboratory work.",
+            specs: [
+                { label: "Use", value: "Diagnostics, Sampling" },
+                { label: "Grade", value: "Veterinary" }
+            ]
         }
     ];
 
@@ -62,22 +86,21 @@ export default function Veterinary() {
         "Strong export experience to import-dependent livestock markets."
     ];
 
-    const overview = `We are an **India-based exporter of veterinary and animal husbandry consumables**, supplying to commercial farms, veterinary hospitals, and distributors.
-  
-  **Focus**: Essential, high-rotation consumables used in routine animal healthcare.
-  **Logistics**: Often consolidated with animal feed shipments for procurement efficiency.`;
+    const overview = `We are an India-based exporter of veterinary and animal husbandry consumables, supplying to commercial farms, veterinary hospitals, and distributors.
 
+  Focus: Essential, high-rotation consumables used in routine animal healthcare.`;
 
+    const seoFooter = 'Veterinary consumables exporter India | Animal husbandry supplies exporter | Vet syringes bulk supplier | Livestock consumables export';
 
     return (
         <ExportPageTemplate
             title="Veterinary & Animal Husbandry Consumables"
             subtitle="Essential veterinary disposables and farm-use instruments."
+            heroImage="/Banner 5. Veterinary & Animal Husbandry.png"
             overview={overview}
             products={products}
             whySource={whySource}
-        >
-
-        </ExportPageTemplate>
+            seoFooter={seoFooter}
+        />
     );
 }

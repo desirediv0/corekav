@@ -12,7 +12,8 @@ const ExportPageTemplate = ({
     products,
     whySource,
     specTable,
-    children, // Optional: e.g. product collage images from client
+    children,
+    seoFooter, // Optional: SEO keywords footer text
 }) => {
     return (
         <main>
@@ -24,11 +25,11 @@ const ExportPageTemplate = ({
                         <span className="text-secondary font-bold uppercase tracking-[0.2em] text-xs mb-3 block">Vertical Overview</span>
                         <h2 className="text-3xl font-serif font-bold text-primary mb-6">Sector Capabilities</h2>
                         <div className="prose prose-lg text-primary/80 leading-relaxed whitespace-pre-line">
-                            {overview}
+                            {overview?.replace(/\*\*/g, '')}
                         </div>
                     </div>
                     <div className="bg-neutral-50 p-8 border-t-4 border-secondary shadow-sm">
-                        <h3 className="text-lg font-bold font-serif text-primary mb-6">Why Source from CoreKAV?</h3>
+                        <h3 className="text-lg font-bold font-serif text-primary mb-6">Why Source from COREKAV?</h3>
                         <ul className="space-y-4">
                             {whySource.map((item, i) => (
                                 <li key={i} className="flex gap-3 items-start">
@@ -54,7 +55,7 @@ const ExportPageTemplate = ({
                             {product.image && (
                                 <div className="relative h-64 w-full bg-white shrink-0 p-4 border-b border-neutral-100">
                                     <Image
-                                        src={product.image}
+                                        src={encodeURI(product.image)}
                                         alt={product.name}
                                         fill
                                         className="object-contain group-hover:scale-105 transition-transform duration-300"
@@ -84,7 +85,7 @@ const ExportPageTemplate = ({
 
                                 <div className="mt-auto">
                                     <span className="text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2 group-hover:gap-3 transition-all">
-                                        Request Catalog <ArrowRight size={12} />
+                                        Product Details <ArrowRight size={12} />
                                     </span>
                                 </div>
                             </div>
@@ -96,6 +97,12 @@ const ExportPageTemplate = ({
             {children && (
                 <SectionWrapper className="bg-white border-t border-neutral-200">
                     {children}
+                </SectionWrapper>
+            )}
+
+            {seoFooter && (
+                <SectionWrapper className="bg-neutral-50 border-t border-neutral-200">
+                    <p className="text-xs text-primary/50 text-center max-w-4xl mx-auto leading-relaxed">{seoFooter}</p>
                 </SectionWrapper>
             )}
 

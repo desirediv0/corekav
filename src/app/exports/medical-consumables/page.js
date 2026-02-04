@@ -36,12 +36,20 @@ export default function MedicalConsumables() {
             ]
         },
         {
-            name: "Examination Gloves",
-            description: "Latex and Nitrile examination gloves for medical and specific handling.",
+            name: "Latex & Nitrile Examination Gloves",
+            description: "Latex and Nitrile examination gloves for medical and specific handling. High-volume consumables for hospitals and clinics.",
             image: "/products/medical/Examination-Gloves.jpeg",
             specs: [
                 { label: "HS Code", value: "401511" },
                 { label: "Material", value: "Latex / Nitrile" }
+            ]
+        },
+        {
+            name: "Wound Care Consumables",
+            description: "Sterile gauze, adhesive bandages, and dressing materials for daily clinical use.",
+            specs: [
+                { label: "Use", value: "Wound Care" },
+                { label: "Type", value: "Disposable" }
             ]
         },
         {
@@ -62,22 +70,21 @@ export default function MedicalConsumables() {
         "Ability to supply continuous volumes for public health systems."
     ];
 
-    const overview = `We are an **India-based exporter of human medical consumables**, supplying to hospitals, clinics, NGOs, and public procurement agencies.
-  
-  **Focus**: Essential, high-volume products sourced from compliant manufacturers.
-  **Execution**: Structured export documentation and disciplined commercial terms for institutional buyers.`;
+    const overview = `We are an India-based exporter of human medical consumables and hospital-use disposables, supplying to hospitals, clinics, medical distributors, NGOs, and public procurement agencies across South Asia, Middle East (including GCC), Africa, South East Asia, Central Asia, and select emerging markets.
 
+  Our exports focus on essential, high-volume medical products sourced from compliant Indian manufacturers, supplied under structured export documentation and disciplined commercial terms. We do not operate as a retail brand; we function as a reliable institutional export supplier. We work with buyers who value continuity of supply, regulatory clarity, and predictable pricing, especially for public healthcare, donor-funded programs, and private hospital networks.`;
 
+    const seoFooter = 'Medical consumables exporter India | Hospital disposables supplier | Medical disposables bulk export | Healthcare consumables India';
 
     return (
         <ExportPageTemplate
             title="Human Medical Consumables"
             subtitle="Essential hospital disposables and healthcare products."
+            heroImage="/Banner 6 Human Medical Consumables .png"
             overview={overview}
             products={products}
             whySource={whySource}
-        >
-
-        </ExportPageTemplate>
+            seoFooter={seoFooter}
+        />
     );
 }

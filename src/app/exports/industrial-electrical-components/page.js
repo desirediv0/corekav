@@ -53,22 +53,22 @@ export default function IndustrialElectrical() {
         "Flexible fabrication for country- and project-specific requirements."
     ];
 
-    const overview = `We are an **India-based exporter of industrial and electrical components** used in power systems, renewable energy installations, and infrastructure projects.
-  
-  **Buyers**: EPC contractors, renewable energy developers, and industrial distributors.
-  **Focus**: Project-grade supply, export compliance, and repeat institutional orders.`;
+    const overview = `We are an India-based exporter of industrial and electrical components used in power systems, renewable energy installations, and infrastructure projects.
 
+  Buyers: EPC contractors, renewable energy developers, and industrial distributors.
+  Focus: Project-grade supply, export compliance, and repeat institutional orders.`;
 
+    const seoFooter = 'Industrial electrical components exporter India | Renewable energy components supplier | Battery racks exporter India | IP rated inverter enclosures | Power distribution panels export';
 
     return (
         <ExportPageTemplate
             title="Electrical, Industrial & Renewable Energy Components"
-            subtitle="Power system accessories and infrastructure components."
+            subtitle="Electrical, Power & Renewable Energy Components"
+            heroImage="/Banner 7. Electrical, Industrial & Renewable Energy Components.png"
             overview={overview}
             products={products}
             whySource={whySource}
-        >
-
-        </ExportPageTemplate>
+            seoFooter={seoFooter}
+        />
     );
 }

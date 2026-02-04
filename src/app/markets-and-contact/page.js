@@ -1,21 +1,23 @@
 import Hero from '@/components/Hero';
 import SectionWrapper from '@/components/SectionWrapper';
 import FAQAccordion from '@/components/FAQAccordion';
+import InquiryForm from '@/components/InquiryForm';
 import { MapPin, Phone, Mail, Globe, Clock } from 'lucide-react';
+import Image from 'next/image';
 
 export const metadata = {
-    title: 'Markets & Contact | CoreKAV International',
+    title: 'Markets & Contact | COREKAV International',
     description: 'Global Markets We Serve, FAQs, and Contact Information.',
 };
 
 export default function MarketsContact() {
     const markets = [
-        { region: "South Asia", countries: "Bangladesh, Nepal, Sri Lanka, Bhutan, Maldives" },
-        { region: "Middle East / West Asia", countries: "UAE, Saudi Arabia, Oman, Qatar, Bahrain, Kuwait, Iraq, Jordan, Lebanon" },
-        { region: "Africa", countries: "Kenya, Nigeria, Ghana, Tanzania, Uganda, Ethiopia, Rwanda, South Africa, Zambia, Zimbabwe+" },
-        { region: "South East Asia", countries: "Vietnam, Indonesia, Philippines, Cambodia, Myanmar, Thailand, Laos" },
+        { region: "South and South East Asia", countries: "Bangladesh, Nepal, Sri Lanka, Bhutan, Maldives, Vietnam, Indonesia, Philippines, Cambodia, Myanmar, Thailand, Laos" },
         { region: "Central Asia", countries: "Kazakhstan, Uzbekistan, Tajikistan, Kyrgyzstan, Turkmenistan" },
-        { region: "Emerging Markets", countries: "Peru, Bolivia, Paraguay, Georgia, Armenia, Afghanistan, Mongolia" }
+        { region: "Middle East and GCC", countries: "UAE, Saudi Arabia, Oman, Qatar, Bahrain, Kuwait, Iraq, Jordan, Lebanon" },
+        { region: "Africa", countries: "Kenya, Nigeria, Ghana, Tanzania, Uganda, Ethiopia, Rwanda, South Africa, Zambia, Zimbabwe" },
+        { region: "USA", countries: "United States" },
+        { region: "Latin America and Caribbean", countries: "Peru, Bolivia, Paraguay, Brazil, Mexico, Caribbean nations" }
     ];
 
     const faqs = [
@@ -75,27 +77,40 @@ export default function MarketsContact() {
                 <div className="grid lg:grid-cols-2 gap-16">
                     <div>
                         <h2 className="text-3xl font-serif font-bold mb-8">Contact Us</h2>
-                        <div className="space-y-8">
+                        <div className="space-y-6 sm:space-y-8">
                             <div className="flex gap-4">
-                                <MapPin className="text-secondary flex-shrink-0" size={24} />
+                                <MapPin className="text-secondary flex-shrink-0 mt-0.5" size={24} />
                                 <div>
-                                    <h4 className="font-bold text-lg">Headquarters</h4>
-                                    <p className="opacity-80 leading-relaxed">CoreKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place,<br />New Delhi, Delhi 110001, India</p>
+                                    <h4 className="font-bold text-base sm:text-lg">Headquarters</h4>
+                                    <p className="opacity-80 leading-relaxed text-sm sm:text-base">COREKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place,<br />New Delhi, Delhi 110001, India</p>
                                 </div>
                             </div>
-                            <div className="flex gap-4">
-                                <Phone className="text-secondary flex-shrink-0" size={24} />
-                                <div>
-                                    <h4 className="font-bold text-lg">Phone / WhatsApp</h4>
-                                    <a href="tel:+919319337377" className="opacity-80 hover:text-white block">+91-9319337377</a>
-                                </div>
+                            <div className="flex gap-3 sm:gap-4">
+                                <a href="https://wa.me/919319337377" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 sm:p-4 rounded-lg bg-white/10 hover:bg-secondary/20 border border-white/10 hover:border-secondary/50 transition-all group w-full min-h-[56px] sm:min-h-0">
+                                    <Image src="/whatsapp.svg" alt="WhatsApp" width={28} height={28} className="shrink-0" />
+                                    <div className="min-w-0">
+                                        <h4 className="font-bold text-base sm:text-lg text-secondary group-hover:text-secondary">Phone / WhatsApp</h4>
+                                        <span className="opacity-90 group-hover:text-white text-sm sm:text-base block">+91-9319337377</span>
+                                    </div>
+                                </a>
                             </div>
-                            <div className="flex gap-4">
-                                <Mail className="text-secondary flex-shrink-0" size={24} />
-                                <div>
-                                    <h4 className="font-bold text-lg">Email</h4>
-                                    <a href="mailto:info@corekav.com" className="opacity-80 hover:text-white block">info@corekav.com</a>
-                                </div>
+                            <div className="flex gap-3 sm:gap-4">
+                                <a href="mailto:info@corekav.com" className="flex gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg bg-white/10 hover:bg-secondary/20 border border-white/10 hover:border-secondary/50 transition-all group w-full min-h-[56px] sm:min-h-0">
+                                    <Mail className="text-secondary flex-shrink-0 group-hover:text-secondary mt-0.5" size={24} />
+                                    <div className="min-w-0">
+                                        <h4 className="font-bold text-base sm:text-lg text-secondary group-hover:text-secondary">Email</h4>
+                                        <span className="opacity-90 block text-sm sm:text-base break-all">info@corekav.com</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div className="flex gap-3 sm:gap-4">
+                                <a href="https://www.corekav.com" target="_blank" rel="noopener noreferrer" className="flex gap-3 sm:gap-4 p-3 sm:p-4 rounded-lg bg-white/10 hover:bg-secondary/20 border border-white/10 hover:border-secondary/50 transition-all group w-full min-h-[56px] sm:min-h-0">
+                                    <Globe className="text-secondary flex-shrink-0 group-hover:text-secondary mt-0.5" size={24} />
+                                    <div className="min-w-0">
+                                        <h4 className="font-bold text-base sm:text-lg text-secondary group-hover:text-secondary">Website</h4>
+                                        <span className="opacity-90 block text-sm sm:text-base break-all">www.corekav.com</span>
+                                    </div>
+                                </a>
                             </div>
                             <div className="flex gap-4">
                                 <Clock className="text-secondary flex-shrink-0" size={24} />
@@ -109,18 +124,7 @@ export default function MarketsContact() {
 
                     <div className="bg-white/5 p-8 border border-white/10 rounded-sm">
                         <h3 className="text-xl font-bold mb-6">Send an Inquiry</h3>
-                        <form className="space-y-4">
-                            <div className="grid md:grid-cols-2 gap-4">
-                                <input type="text" placeholder="Name" className="w-full bg-white/10 border border-white/20 p-3 text-sm focus:outline-none focus:border-secondary text-white placeholder-white/50 invalid:border-red-500" />
-                                <input type="text" placeholder="Company" className="w-full bg-white/10 border border-white/20 p-3 text-sm focus:outline-none focus:border-secondary text-white placeholder-white/50" />
-                            </div>
-                            <input type="email" placeholder="Email Address" className="w-full bg-white/10 border border-white/20 p-3 text-sm focus:outline-none focus:border-secondary text-white placeholder-white/50" />
-                            <input type="tel" placeholder="Phone Number" className="w-full bg-white/10 border border-white/20 p-3 text-sm focus:outline-none focus:border-secondary text-white placeholder-white/50" />
-                            <textarea rows="4" placeholder="Message / Product Interests" className="w-full bg-white/10 border border-white/20 p-3 text-sm focus:outline-none focus:border-secondary text-white placeholder-white/50"></textarea>
-                            <button type="submit" className="w-full bg-secondary text-primary font-bold uppercase tracking-widest py-3 hover:bg-white transition-colors">
-                                Submit Inquiry
-                            </button>
-                        </form>
+                        <InquiryForm />
                     </div>
                 </div>
             </SectionWrapper>

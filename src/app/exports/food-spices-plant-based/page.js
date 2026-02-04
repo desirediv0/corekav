@@ -70,19 +70,22 @@ export default function FoodSpices() {
         "Supply continuity and batch consistency."
     ];
 
-    const overview = `We supply **Bulk spices, natural food inputs, and plant-based functional ingredients** for food processing, nutraceutical, and institutional consumption markets.
+    const overview = `We supply bulk spices, natural food inputs, and plant-based functional ingredients for food processing, nutraceutical, and institutional consumption markets.
 
-  **Focus**: Natural Food Colours, Oleoresins, and Functional Plant Extracts.
-  **Export Format**: Oil-soluble oleoresins, water-soluble extracts, and standardized powders.`;
+  Focus: Natural Food Colours, Oleoresins, and Functional Plant Extracts.
+  Export Format: Oil-soluble oleoresins, water-soluble extracts, and standardized powders.`;
+
+    const seoFooter = 'India spices exporter | Natural food colours India | Chilli oleoresin supplier | Paprika oleoresin | Turmeric curcumin exporter | Beetroot red | Plant-based ingredients exporter India';
 
     return (
         <ExportPageTemplate
             title="Food, Spices & Plant-Based Ingredients"
             subtitle="Exotic Spices, Natural Food Colours, and Functional Ingredients."
-            // heroImage="/spices-hero.jpg" // You might want to generate a specific hero for this if needed, or reuse
+            heroImage="/Banner 2. Food, Spices & Plant-Based Ingredients .png"
             overview={overview}
             products={products}
             whySource={whySource}
+            seoFooter={seoFooter}
         />
     );
 }

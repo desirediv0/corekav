@@ -27,7 +27,7 @@ const Header = () => {
                     <Link href="/" className="flex items-center gap-3 group">
                         <Image
                             src="/logo.png"
-                            alt="CoreKAV International Trade"
+                            alt="COREKAV International Trade"
                             width={200}
                             height={200}
                             className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"
@@ -70,7 +70,7 @@ const Header = () => {
                             href="/exports/carbon-credits-esg-climate-solutions"
                             className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
                         >
-                            Carbon &amp; ESG
+                            Carbon &amp; Sustainability
                         </Link>
 
                         <Link
@@ -154,7 +154,7 @@ const Header = () => {
                             onClick={() => setIsOpen(false)}
                             className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
                         >
-                            Carbon &amp; ESG
+                            Carbon &amp; Sustainability
                         </Link>
 
                         <Link

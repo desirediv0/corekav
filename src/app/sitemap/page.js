@@ -3,7 +3,7 @@ import Hero from '@/components/Hero';
 import Link from 'next/link';
 
 export const metadata = {
-    title: 'Sitemap | CoreKAV International',
+    title: 'Sitemap | COREKAV International',
     description: 'Site overview and navigation structure.',
 };
 
@@ -13,7 +13,7 @@ export default function Sitemap() {
             category: "Main Pages",
             links: [
                 { name: "Home", href: "/" },
-                { name: "About Us", href: "/about" },
+                { name: "Who We Are", href: "/about" },
                 { name: "Markets & Contact", href: "/markets-and-contact" },
                 { name: "Privacy Policy", href: "/privacy-policy" },
                 { name: "Terms of Trade", href: "/terms-of-trade" },
@@ -28,7 +28,7 @@ export default function Sitemap() {
                 { name: "Industrial & Electrical", href: "/exports/industrial-electrical-components" },
                 { name: "Spices & Food Ingredients", href: "/exports/makhana-fox-nuts-lotus-seeds" },
                 { name: "Nutraceuticals & Ayurveda", href: "/exports/herbal-nutraceutical-ayurveda-ingredients" },
-                { name: "Carbon Credits & ESG", href: "/exports/carbon-credits-esg-climate-solutions" },
+                { name: "Carbon & Sustainability", href: "/exports/carbon-credits-esg-climate-solutions" },
             ]
         }
     ];
@@ -37,7 +37,7 @@ export default function Sitemap() {
         <main>
             <Hero
                 title="Sitemap"
-                subtitle="Overview of CoreKAV International Website Structure"
+                subtitle="Overview of COREKAV International Website Structure"
                 variant="internal"
             />
 

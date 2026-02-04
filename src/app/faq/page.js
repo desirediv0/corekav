@@ -4,7 +4,7 @@ import FAQAccordion from '@/components/FAQAccordion';
 import ContactCTA from '@/components/ContactCTA';
 
 export const metadata = {
-    title: 'Frequently Asked Questions | CoreKAV International',
+    title: 'Frequently Asked Questions | COREKAV International',
     description: 'Common questions about our export processes, products, and services.',
 };
 

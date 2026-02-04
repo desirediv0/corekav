@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CoreKAV brand colours (client-specified) */
+/* COREKAV brand colours (client-specified) */
 :root {
   /* Main Background – Deep Navy Blue (domain: corekav.com) */
   --color-main-bg: #0b1f3b;

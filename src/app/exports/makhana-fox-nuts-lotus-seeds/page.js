@@ -53,18 +53,26 @@ export default function Makhana() {
         "Export-grade bulk packaging (bags, drums, cartons)."
     ];
 
-    const overview = `We supply **Specialised Agro-Commodities** focusing on high-value, functional food ingredients like **Makhana, Pea Protein, and Saffron**.
-  
-  **Focus**: Healthy snacking, plant-based nutrition, and premium spices.
-  **Execution**: Batch-wise processing, grading, and strict moisture control for international shipment.`;
+    const overview = `We supply Specialised Agro-Commodities focusing on high-value, functional food ingredients like Makhana (Fox Nuts / Lotus Seeds), Pea Protein, Saffron, and Dehydrated Vegetables.
+
+  Focus: Healthy snacking, plant-based nutrition, and premium spices.
+  Execution: Batch-wise processing, grading, and strict moisture control for international shipment.
+
+  We Work With: Food and beverage manufacturers, nutraceutical and dietary supplement companies, functional food and plant-based protein formulators, oleoresin and extract buyers, importers and bulk distributors.
+
+  Export Execution and Quality Discipline: Source-verified raw materials, batch-wise processing and grading, moisture and purity alignment, export-grade bulk packaging (bags, drums, cartons), full export documentation aligned with destination country regulations. We handle containerized shipments for bulk and institutional orders.`;
+
+    const seoFooter = 'India spices exporter | Makhana exporter India | Chilli oleoresin supplier India | Saffron export India | Pea protein isolate exporter | Moringa leaf powder supplier | Functional food ingredients exporter India | Plant-based ingredients supplier India';
 
     return (
         <ExportPageTemplate
-            title="Specialised Agro - Makhana & Saffron"
+            title="Specialised Agro – Makhana (Fox Nuts / Lotus Seeds), Pea Protein, Saffron and Dehydrated Vegetables"
             subtitle="Fox Nuts, Plant Proteins, and Premium Agro Commodities."
+            heroImage="/Banner 3. Makhana, Dried Veg, Saffron .png"
             overview={overview}
             products={products}
             whySource={whySource}
+            seoFooter={seoFooter}
         />
     );
 }

@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, ArrowRight } from 'lucide-react';
+import { Mail, MapPin, ArrowRight } from 'lucide-react';
 
 const Footer = () => {
     return (
@@ -13,7 +13,7 @@ const Footer = () => {
                         <Link href="/" className="inline-block">
                             <Image
                                 src="/logo.png"
-                                alt="CoreKAV International Trade"
+                                alt="COREKAV International Trade"
                                 width={160}
                                 height={64}
                                 className="h-20 w-auto object-contain"
@@ -38,7 +38,7 @@ const Footer = () => {
                             <li><Link href="/exports/veterinary-animal-husbandry-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Veterinary Consumables</Link></li>
                             <li><Link href="/exports/medical-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Human Medical Consumables</Link></li>
                             <li><Link href="/exports/industrial-electrical-components" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Industrial &amp; Electrical</Link></li>
-                            <li><Link href="/exports/carbon-credits-esg-climate-solutions" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Carbon &amp; ESG</Link></li>
+                            <li><Link href="/exports/carbon-credits-esg-climate-solutions" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Carbon &amp; Sustainability</Link></li>
                         </ul>
                     </div>
 
@@ -60,16 +60,17 @@ const Footer = () => {
                         <div className="space-y-5 text-sm text-neutral/80">
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                                <span className="leading-relaxed">CoreKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place<br />New Delhi, India 110001</span>
+                                <span className="leading-relaxed">COREKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place<br />New Delhi, India 110001</span>
                             </div>
                             <div className="flex items-center gap-4">
-                                <IconWrapper icon={Phone} />
-                                <a href="tel:+919319337377" className="hover:text-white transition-colors">+91-9319337377</a>
-
+                                <a href="https://wa.me/919319337377" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary font-bold hover:text-white transition-colors">
+                                    <Image src="/whatsapp.svg" alt="WhatsApp" width={20} height={20} className="shrink-0" />
+                                    +91-9319337377
+                                </a>
                             </div>
                             <div className="flex items-center gap-4">
                                 <IconWrapper icon={Mail} />
-                                <a href="mailto:info@corekav.com" className="hover:text-white transition-colors">info@corekav.com</a>
+                                <a href="mailto:info@corekav.com" className="text-secondary font-semibold hover:text-white transition-colors">info@corekav.com</a>
                             </div>
                         </div>
                     </div>
@@ -77,7 +78,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-neutral/50 gap-4">
-                    <p>© {new Date().getFullYear()} CoreKAV International Trade. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} COREKAV International Trade. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="/privacy-policy" className="hover:text-neutral transition-colors">Privacy Policy</Link>
                         <Link href="/terms-of-trade" className="hover:text-neutral transition-colors">Terms of Trade</Link>

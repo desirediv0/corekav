@@ -26,7 +26,7 @@ const Hero = ({
                         className={`absolute inset-0 bg-cover bg-center z-10 mix-blend-overlay transition-opacity duration-700
                         ${isHome ? 'opacity-50' : 'opacity-30'}
                     `}
-                        style={{ backgroundImage: `url(${bgImage})` }}
+                        style={{ backgroundImage: `url(${encodeURI(bgImage)})` }}
                     />
                 )}
 
@@ -52,7 +52,7 @@ const Hero = ({
 
                     {/* Title */}
                     <h1 className={`font-serif font-bold text-neutral leading-tight tracking-wide
-                    ${isHome ? 'text-4xl md:text-6xl lg:text-7xl drop-shadow-2xl' : 'text-3xl md:text-5xl lg:text-5xl'}
+                    ${isHome ? 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl drop-shadow-2xl' : 'text-3xl md:text-5xl lg:text-5xl'}
                 `}>
                         {title}
                     </h1>

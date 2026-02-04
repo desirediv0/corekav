@@ -9,7 +9,7 @@ export default function Nutraceuticals() {
     // Client images: save to public/products/herbal/ with these names to show on cards
     const products = [
         {
-            name: "Ashwagandha Extract",
+            name: "Ashwagandha Extract (Withania somnifera)",
             description: "Adaptogenic stress control, hormonal balance. Standardized to ≥5% Withanolides.",
             image: "/products/herbal/Ashwagandha-Extract.png",
             specs: [
@@ -36,7 +36,7 @@ export default function Nutraceuticals() {
             ]
         },
         {
-            name: "Boswellia Extract (Shallaki)",
+            name: "Boswellia Extract (Shallaki) / Boswellia Serrata Extract",
             description: "Anti-inflammatory support for joint health and mobility.",
             image: "/products/herbal/Boswellia-Serrata-Extract.jpg",
             specs: [
@@ -88,8 +88,18 @@ export default function Nutraceuticals() {
                 { label: "Active", value: "Ursolic Acid" },
                 { label: "Use", value: "Immunity" }
             ]
+        },
+        {
+            name: "Shilajit + Ashwagandha Vitality Complex",
+            description: "90-day vitality program. Supports energy, stamina, hormonal balance, and men's wellness. Non-habit forming.",
+            specs: [
+                { label: "HS Code", value: "121190 / 300390" },
+                { label: "Forms", value: "Capsules, Resin + Extract, Powder" }
+            ]
         }
     ];
+
+    const seoFooter = 'Herbal extracts exporter India | Nutraceutical ingredients exporter | Ayurvedic ingredients supplier India | Herbal nutraceutical raw materials export | Men vitality supplement ingredients supplier | Longevity supplement ingredient exporter India | Ayurvedic skincare raw material exporter | Herbal cosmetic ingredients supplier India | Botanical extract exporter India | Functional herbal ingredients export | Bulk nutraceutical ingredient supplier | Ayurveda personal care ingredients exporter';
 
     const whySource = [
         "Deep-rooted Ayurvedic and botanical knowledge systems.",
@@ -98,11 +108,15 @@ export default function Nutraceuticals() {
         "Cost-efficient production aligned with global quality expectations."
     ];
 
-    const overview = `We are an **India-based exporter of herbal extracts, nutraceutical-grade botanicals, and Ayurveda-based functional ingredients** used across dietary supplements, men’s vitality & longevity formulations, and premium beauty products.
+    const overview = `We are an India-based exporter of herbal extracts, nutraceutical-grade botanicals, and Ayurveda-based functional ingredients used across dietary supplements, men’s vitality & longevity formulations, and premium beauty products.
 
-  **Our Role**: Strictly bulk ingredient export and formulation supply. We do not export finished consumer supplements effectively.
+  Our Role: Strictly bulk ingredient export and formulation supply. We do not export finished consumer supplements.
   
-  **Key Products**: Ashwagandha, Shilajit, Shatavari, Boswellia, Moringa, Vitamin E.`;
+  Key Products: Ashwagandha, Shilajit, Shatavari, Boswellia, Moringa, Vitamin E, Shilajit + Ashwagandha Vitality Complex.
+  
+  Export Format: Raw Extracts, Capsules, Powders, Oils.
+  
+  Enquiry for Supply: If you are sourcing herbal extracts, nutraceutical ingredients, or Ayurveda-based functional inputs from India, we welcome structured discussions covering botanical type, extract ratio, volumes, MOQs, packaging formats, and regulatory documentation.`;
 
     // Using the new collage image for Nutra
 
@@ -111,11 +125,11 @@ export default function Nutraceuticals() {
         <ExportPageTemplate
             title="Nutraceutical, Herbal Extracts & Ayurveda Ingredients"
             subtitle="Botanical functional ingredients for supplements and personal care."
+            heroImage="/Banner1. Nutraceutical, Herbal Extracts & Ayurveda Ingredients.png"
             overview={overview}
             products={products}
             whySource={whySource}
-        >
-
-        </ExportPageTemplate>
+            seoFooter={seoFooter}
+        />
     );
 }
