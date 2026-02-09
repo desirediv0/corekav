@@ -37,6 +37,7 @@ export default function CarbonESG() {
         {
             name: "Carbon Project Aggregation",
             description: "Aggregating eligible projects into bankable portfolios for scale and diversification.",
+            image: "/products/carbon/carbon-project-aggregation.jpg",
             specs: [
                 { label: "Focus", value: "Scale & Access" },
                 { label: "Target", value: "Developers & Corporates" }
@@ -45,6 +46,7 @@ export default function CarbonESG() {
         {
             name: "Carbon Credit Brokerage",
             description: "Intermediary between verified project owners and qualified buyers. Registry-listed credits, transparent pricing, counterparty due diligence.",
+            image: "/products/carbon/carbon-credits-brokerage.jpg",
             specs: [
                 { label: "Type", value: "Verified Credits" },
                 { label: "Model", value: "Transparent Pricing" }
@@ -53,6 +55,7 @@ export default function CarbonESG() {
         {
             name: "Advisory Services",
             description: "Buy/Sell-side advisory, feasibility assessment, and net-zero strategy planning.",
+            image: "/products/carbon/advisory-services.png",
             specs: [
                 { label: "Scope", value: "Strategic Advisory" },
                 { label: "Goal", value: "Long-term Decarbonization" }
@@ -61,6 +64,7 @@ export default function CarbonESG() {
         {
             name: "Corporate Offtake & Long-Term Supply Model",
             description: "Long-term carbon credit offtake agreements between corporates and curated project portfolios. Secure predictable and traceable credit supply; support multi-year ESG and net-zero roadmaps; reduce price volatility.",
+            image: "/products/carbon/corporate-offtake.png",
             specs: [
                 { label: "Benefit", value: "Price Certainty" },
                 { label: "Target", value: "Large Emitters" }

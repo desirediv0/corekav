@@ -47,6 +47,7 @@ export default function MedicalConsumables() {
         {
             name: "Wound Care Consumables",
             description: "Sterile gauze, adhesive bandages, and dressing materials for daily clinical use.",
+            image: "/products/medical/wound-care.avif",
             specs: [
                 { label: "Use", value: "Wound Care" },
                 { label: "Type", value: "Disposable" }

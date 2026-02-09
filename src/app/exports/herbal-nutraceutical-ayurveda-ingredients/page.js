@@ -9,16 +9,16 @@ export default function Nutraceuticals() {
     // Client images: save to public/products/herbal/ with these names to show on cards
     const products = [
         {
-            name: "Ashwagandha Extract (Withania somnifera)",
+            name: "Ashwagandha Extract (Indian Ginseng)",
             description: "Adaptogenic stress control, hormonal balance. Standardized to ≥5% Withanolides.",
-            image: "/products/herbal/Ashwagandha-Extract.png",
+            image: "/products/herbal/ashwagandha-extract-2.png",
             specs: [
                 { label: "HS Code", value: "121190 / 130219" },
                 { label: "Use", value: "Stress relief, sleep" }
             ]
         },
         {
-            name: "Shilajit (Purified Resin)",
+            name: "Shilajit (Mineral Pitch / Asphaltum)",
             description: "Hormonal balance, vitality, and cellular energy. Rich in Fulvic & Humic minerals.",
             image: "/products/herbal/Shilajit.jpg",
             specs: [
@@ -27,7 +27,7 @@ export default function Nutraceuticals() {
             ]
         },
         {
-            name: "Shatavari Root Extract",
+            name: "Shatavari Root Extract (Wild Asparagus)",
             description: "Rejuvenative tonic for women's health. Supports hormonal balance.",
             image: "/products/herbal/Shatavari-Root-Extract.jpeg",
             specs: [
@@ -36,7 +36,7 @@ export default function Nutraceuticals() {
             ]
         },
         {
-            name: "Boswellia Extract (Shallaki) / Boswellia Serrata Extract",
+            name: "Boswellia Extract (Indian Frankincense)",
             description: "Anti-inflammatory support for joint health and mobility.",
             image: "/products/herbal/Boswellia-Serrata-Extract.jpg",
             specs: [
@@ -45,7 +45,7 @@ export default function Nutraceuticals() {
             ]
         },
         {
-            name: "Moringa Leaf Powder",
+            name: "Moringa Leaf Powder (Drumstick Tree)",
             description: "Nutritious superfood rich in protein, calcium, and iron. Used in supplements and feed.",
             image: "/products/herbal/Moringa-Leaf-Powder.jpg",
             specs: [
@@ -63,7 +63,7 @@ export default function Nutraceuticals() {
             ]
         },
         {
-            name: "Brahmi Extract",
+            name: "Brahmi Extract (Water Hyssop / Bacopa)",
             description: "Cognitive support herb known for enhancing memory and focus (Bacopa Monnieri).",
             image: "/products/herbal/Brahmi-Extract.jpg",
             specs: [
@@ -72,7 +72,7 @@ export default function Nutraceuticals() {
             ]
         },
         {
-            name: "Triphala Extract",
+            name: "Triphala Extract (Three Fruits)",
             description: "Traditional Ayurvedic digestive tonic composed of three fruits: Amla, Bibhitaki, and Haritaki.",
             image: "/products/herbal/Triphala-Extract.jpg",
             specs: [
@@ -113,7 +113,7 @@ export default function Nutraceuticals() {
 
   Our Role: Strictly bulk ingredient export and formulation supply. We do not export finished consumer supplements.
   
-  Key Products: Ashwagandha, Shilajit, Shatavari, Boswellia, Moringa, Vitamin E, Shilajit + Ashwagandha Vitality Complex.
+  Key Products: Ashwagandha (Indian Ginseng), Shilajit, Shatavari (Wild Asparagus), Boswellia (Frankincense), Moringa, Vitamin E, Vitality Complex.
   
   Export Format: Raw Extracts, Capsules, Powders, Oils.
   

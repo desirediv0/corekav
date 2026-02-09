@@ -64,6 +64,7 @@ export default function Veterinary() {
         {
             name: "Tubs & Containers (OEM / White-Label)",
             description: "Plastic and metal accessories for veterinary procedures, storage, and handling.",
+            image: "/products/veterinary/tubs-containers.avif",
             specs: [
                 { label: "Type", value: "OEM / White-Label" },
                 { label: "Use", value: "Storage, Handling" }
@@ -72,6 +73,7 @@ export default function Veterinary() {
         {
             name: "Sample Collection Tubes & Veterinary Labware",
             description: "Consumables for diagnostic sampling and basic veterinary laboratory work.",
+            image: "/products/veterinary/sample-collection-tubes.jpg",
             specs: [
                 { label: "Use", value: "Diagnostics, Sampling" },
                 { label: "Grade", value: "Veterinary" }

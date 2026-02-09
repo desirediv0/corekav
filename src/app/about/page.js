@@ -22,13 +22,13 @@ export default function About() {
                         <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6">
                             We are an India-based, professionally managed export company supporting institutional buyers with reliable, repeat-ready supply of essential, high-rotation products.
                         </p>
-                        <p>
+                        <p className="mb-6">
                             We work closely with importers, distributors, EPC contractors, and government-linked procurement entities that require consistency, compliance, and on-time execution across large and recurring orders.
                         </p>
-                        <p>
+                        <p className="mb-6">
                             Our supply chain model is designed for long-term partnerships—built on compliance-led sourcing, disciplined financial planning, and operational reliability. This allows our buyers to reduce supply risk, stabilize procurement costs, and scale confidently across markets.
                         </p>
-                        <p>
+                        <p className="mb-6">
                             With active trade coverage across South Asia, South East Asia, the Middle East (including the GCC), Africa, Central Asia, and select emerging markets, we act as a single, dependable export partner from India for institutional procurement needs.
                         </p>
                     </div>

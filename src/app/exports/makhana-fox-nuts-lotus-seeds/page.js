@@ -38,7 +38,7 @@ export default function Makhana() {
         {
             name: "Dehydrated Vegetables",
             description: "Various dehydrated vegetable products for food processing.",
-            image: "/products/Nutrients/Dehydrated-vegetables.jpg",
+            image: "/products/Nutrients/dried-vegetables.jpg",
             specs: [
                 { label: "Use", value: "Instant Foods, Soups" },
                 { label: "Grade", value: "Food Grade" }

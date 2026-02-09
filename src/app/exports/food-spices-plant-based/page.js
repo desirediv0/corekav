@@ -73,6 +73,7 @@ export default function FoodSpices() {
     const overview = `We supply bulk spices, natural food inputs, and plant-based functional ingredients for food processing, nutraceutical, and institutional consumption markets.
 
   Focus: Natural Food Colours, Oleoresins, and Functional Plant Extracts.
+
   Export Format: Oil-soluble oleoresins, water-soluble extracts, and standardized powders.`;
 
     const seoFooter = 'India spices exporter | Natural food colours India | Chilli oleoresin supplier | Paprika oleoresin | Turmeric curcumin exporter | Beetroot red | Plant-based ingredients exporter India';
