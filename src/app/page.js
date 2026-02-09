@@ -23,7 +23,7 @@ export default function Home() {
       <Hero
         title={
           <>
-            India-Based Export And Supply Chain Partner Supplying<br />
+
             Nutraceutical, Nutritional, Specialised Agro, Makhana, And Animal Feed
           </>
         }

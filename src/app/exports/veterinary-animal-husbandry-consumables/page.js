@@ -11,7 +11,7 @@ export default function Veterinary() {
         {
             name: "Vet-Grade Disposable Syringes",
             description: "Bulk syringes for livestock vaccination and routine procedures.",
-            image: "/products/medical/Disposable-Medical-Syringes.jpeg",
+            image: "/products/veterinary/Vet-Grade-Disposable-Syringes.jpeg",
             specs: [
                 { label: "HS Code", value: "901831" },
                 { label: "Use", value: "Farm & Clinical" }

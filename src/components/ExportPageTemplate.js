@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Hero from '@/components/Hero';
 import SectionWrapper from '@/components/SectionWrapper';
 import ContactCTA from '@/components/ContactCTA';
-import { CheckCircle, ArrowRight, Package } from 'lucide-react';
+import { CheckCircle, Package } from 'lucide-react';
 
 const ExportPageTemplate = ({
     title,
@@ -11,7 +11,6 @@ const ExportPageTemplate = ({
     overview,
     products,
     whySource,
-    specTable,
     children,
     seoFooter, // Optional: SEO keywords footer text
 }) => {
@@ -83,11 +82,7 @@ const ExportPageTemplate = ({
                                     </div>
                                 )}
 
-                                <div className="mt-auto">
-                                    <span className="text-xs font-bold uppercase tracking-widest text-secondary flex items-center gap-2 group-hover:gap-3 transition-all">
-                                        Product Details <ArrowRight size={12} />
-                                    </span>
-                                </div>
+
                             </div>
                         </div>
                     ))}
