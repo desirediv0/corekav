@@ -18,7 +18,7 @@ const Hero = ({
             {/* Background Layer */}
             <div className="absolute inset-0 z-0">
                 {/* Base Color */}
-                <div className={`absolute inset-0 bg-primary z-0 ${isHome ? '' : 'bg-primary/20'}`} />
+                <div className={`absolute inset-0 bg-primary z-0 ${isHome ? 'bg-primary/60' : 'bg-primary/20'}`} />
 
                 {/* Image Layer */}
                 {bgImage && (

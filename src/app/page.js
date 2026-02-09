@@ -7,13 +7,13 @@ import { ArrowRight, Leaf, Globe, ShieldCheck, Factory, Zap, Stethoscope, Sprout
 
 // What We Do cards – wahi banner images jo har export page par use ho rahe hain
 const WHAT_WE_DO_CARD_IMAGES = {
-  nutraceutical: '/Banner1. Nutraceutical, Herbal Extracts & Ayurveda Ingredients.png',
-  foodSpices: '/Banner 2. Food, Spices & Plant-Based Ingredients .png',
-  agro: '/Banner 3. Makhana, Dried Veg, Saffron .png',
-  animalFeed: '/Banner 4. Animal Feed Supplements & Nutritional Concentrates.png',
-  veterinary: '/Banner 5. Veterinary & Animal Husbandry.png',
-  medical: '/Banner 6 Human Medical Consumables .png',
-  industrial: '/Banner 7. Electrical, Industrial & Renewable Energy Components.png',
+  nutraceutical: '/products/herbal/Ashwagandha-Extract.png',
+  foodSpices: '/products/agro/Chilli-Oleoresin.jpg',
+  agro: '/products/Nutrients/Makhana.jpeg',
+  animalFeed: '/products/animal-feed/Lactation-Concentrate.jpg',
+  veterinary: '/products/veterinary/Veterinary-Needles.png',
+  medical: '/products/medical/Diagnostic-Lab-Consumables.png',
+  industrial: '/products/industrial/Power-Distribution-Boxes.png',
   carbon: '/Banner 8. Carbon .png',
 };
 
@@ -21,8 +21,13 @@ export default function Home() {
   return (
     <main>
       <Hero
-        title="India-Based Export And Supply Chain Partner Supplying Nutraceutical, Nutritional, Specialised Agro, Makhana (Fox Nut), And Animal Feed Commodities For Institutional Buyers"
-        subtitle="Supplying verified, compliant and scalable products to global markets across food, specialised agro (makhana), nutraceuticals, human and veterinary medical consumables, and electrical energy components."
+        title={
+          <>
+            India-Based Export And Supply Chain Partner Supplying<br />
+            Nutraceutical, Nutritional, Specialised Agro, Makhana, And Animal Feed
+          </>
+        }
+        subtitle="Supplying verified, compliant and scalable products to global markets across food, specialised agro, nutraceuticals, human and veterinary medical consumables, and electrical energy components."
         variant="home"
         ctaText="View Products"
         ctaLink="#what-we-do"
@@ -33,19 +38,12 @@ export default function Home() {
       <SectionWrapper id="what-we-do" className="bg-neutral/20">
         <div className="text-center mb-8 sm:mb-12">
           <span className="text-xs font-bold uppercase tracking-[0.3em] text-secondary">Export &amp; Services</span>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mt-2 mb-3 sm:mb-4">What We Do</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-primary mt-2 mb-3 sm:mb-4">Products</h2>
           <p className="text-sm sm:text-base text-primary/70 max-w-2xl mx-auto px-1">
             We responsibly source, transform, and deliver essential products across agriculture, nutrition, healthcare, and infrastructure to institutional buyers worldwide.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <ServiceCard
-            title="Nutraceutical, Herbal & Ayurveda"
-            desc="Botanical extracts, powders, and formulation inputs for supplements and personal care."
-            icon={Leaf}
-            image={WHAT_WE_DO_CARD_IMAGES.nutraceutical}
-            href="/exports/herbal-nutraceutical-ayurveda-ingredients"
-          />
           <ServiceCard
             title="Food, Spices & Plant-Based"
             desc="Bulk spices, natural food colours, oleoresins, and plant-based functional ingredients."
@@ -59,6 +57,13 @@ export default function Home() {
             icon={Sprout}
             image={WHAT_WE_DO_CARD_IMAGES.agro}
             href="/exports/makhana-fox-nuts-lotus-seeds"
+          />
+          <ServiceCard
+            title="Nutraceutical, Herbal & Ayurveda"
+            desc="Botanical extracts, powders, and formulation inputs for supplements and personal care."
+            icon={Leaf}
+            image={WHAT_WE_DO_CARD_IMAGES.nutraceutical}
+            href="/exports/herbal-nutraceutical-ayurveda-ingredients"
           />
           <ServiceCard
             title="Animal Feed & Nutrition"

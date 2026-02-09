@@ -18,8 +18,8 @@ export default function About() {
             <SectionWrapper className="bg-white">
                 <div className="max-w-4xl mx-auto space-y-10 sm:space-y-12 text-primary/80">
 
-                    <div className="prose prose-sm sm:prose max-w-none text-sm sm:text-base">
-                        <p className="text-base sm:text-lg md:text-xl leading-relaxed">
+                    <div className="prose prose-sm sm:prose max-w-none text-sm sm:text-base text-justify">
+                        <p className="text-base sm:text-lg md:text-xl leading-relaxed mb-6">
                             We are an India-based, professionally managed export company supporting institutional buyers with reliable, repeat-ready supply of essential, high-rotation products.
                         </p>
                         <p>

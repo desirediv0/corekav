@@ -12,7 +12,7 @@ export default function PrivacyPolicy() {
             <Hero title="Privacy Policy" variant="internal" />
 
             <SectionWrapper className="bg-white">
-                <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-primary prose-headings:font-bold prose-headings:font-serif">
+                <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-primary prose-headings:font-bold prose-headings:font-serif text-justify">
                     <p>At COREKAV International Trade (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), we are committed to protecting the privacy and security of your personal information. This Privacy Policy describes how we collect, use, and handle your information when you visit our website or engage with our services.</p>
 
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">1. Information We Collect</h3>

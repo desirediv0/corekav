@@ -16,7 +16,7 @@ export default function TermsOfTrade() {
             />
 
             <SectionWrapper className="bg-white">
-                <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-primary prose-headings:font-bold prose-headings:font-serif">
+                <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-primary prose-headings:font-bold prose-headings:font-serif text-justify">
                     <p>All export sales and transactions entered into by COREKAV International Trade are subject to the following standard terms and conditions, unless specifically modified by a written contract signed by both parties.</p>
 
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">1. Quotations & Contracts</h3>

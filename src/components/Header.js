@@ -10,9 +10,9 @@ const Header = () => {
 
 
     const whatWeDoLinks = [
-        { name: 'Nutraceutical, Herbal & Ayurveda', href: '/exports/herbal-nutraceutical-ayurveda-ingredients' },
         { name: 'Food, Spices & Plant-Based', href: '/exports/food-spices-plant-based' },
         { name: 'Specialised Agro (Makhana, Saffron)', href: '/exports/makhana-fox-nuts-lotus-seeds' },
+        { name: 'Nutraceutical, Herbal & Ayurveda', href: '/exports/herbal-nutraceutical-ayurveda-ingredients' },
         { name: 'Animal Feed & Nutrition', href: '/exports/animal-feed' },
         { name: 'Veterinary & Animal Husbandry', href: '/exports/veterinary-animal-husbandry-consumables' },
         { name: 'Human Medical Consumables', href: '/exports/medical-consumables' },
@@ -91,7 +91,7 @@ const Header = () => {
                             href="/markets-and-contact"
                             className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
                         >
-                            Markets &amp; Contact
+                            Contact
                         </Link>
 
                         <Link
@@ -178,7 +178,7 @@ const Header = () => {
                             onClick={() => setIsOpen(false)}
                             className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
                         >
-                            Markets & Contact
+                            Contact
                         </Link>
 
                         <Link

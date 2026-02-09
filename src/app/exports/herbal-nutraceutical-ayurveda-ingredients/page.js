@@ -92,6 +92,7 @@ export default function Nutraceuticals() {
         {
             name: "Shilajit + Ashwagandha Vitality Complex",
             description: "90-day vitality program. Supports energy, stamina, hormonal balance, and men's wellness. Non-habit forming.",
+            image: "/products/herbal/Ashwagandha-Extract.png",
             specs: [
                 { label: "HS Code", value: "121190 / 300390" },
                 { label: "Forms", value: "Capsules, Resin + Extract, Powder" }

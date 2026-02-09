@@ -10,6 +10,7 @@ export default function CarbonESG() {
         {
             name: "Carbon Trading",
             description: "Spot and structured carbon credit transactions. Verified credits aligned with recognized standards and registries, market-linked pricing, disciplined trade execution and settlement.",
+            image: "/Banner 8. Carbon .png",
             specs: [
                 { label: "Focus", value: "Verified Credits" },
                 { label: "Model", value: "Risk-managed" }
@@ -18,6 +19,7 @@ export default function CarbonESG() {
         {
             name: "Carbon Portfolio",
             description: "JV structures, co-investment models, and strategic partnerships in carbon portfolios. Focus on renewable energy, forestry and mangrove, and waste-to-energy projects.",
+            image: "/esg-hero.jpg",
             specs: [
                 { label: "Sectors", value: "Renewable, Forestry, W2E" },
                 { label: "Goal", value: "High-integrity" }
@@ -26,6 +28,7 @@ export default function CarbonESG() {
         {
             name: "Forestry and Mangrove Projects",
             description: "Nature-based solutions including afforestation, reforestation, and blue-carbon mangrove ecosystems, aligned with biodiversity and climate resilience goals.",
+            image: "/markets-hero.jpg",
             specs: [
                 { label: "Type", value: "Nature-based" },
                 { label: "Standard", value: "Verified" }

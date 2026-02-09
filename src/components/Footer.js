@@ -31,9 +31,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">What We Do</h3>
                         <ul className="space-y-3 text-sm text-neutral/80">
-                            <li><Link href="/exports/herbal-nutraceutical-ayurveda-ingredients" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Nutraceutical &amp; Herbal</Link></li>
                             <li><Link href="/exports/food-spices-plant-based" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Food, Spices &amp; Plant-Based</Link></li>
                             <li><Link href="/exports/makhana-fox-nuts-lotus-seeds" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Specialised Agro</Link></li>
+                            <li><Link href="/exports/herbal-nutraceutical-ayurveda-ingredients" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Nutraceutical &amp; Herbal</Link></li>
                             <li><Link href="/exports/animal-feed" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Animal Feed</Link></li>
                             <li><Link href="/exports/veterinary-animal-husbandry-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Veterinary Consumables</Link></li>
                             <li><Link href="/exports/medical-consumables" className="hover:text-secondary flex items-center gap-2 transition-colors"><ArrowRight size={14} className="text-secondary/50" /> Human Medical Consumables</Link></li>
@@ -47,7 +47,7 @@ const Footer = () => {
                         <h3 className="text-base font-serif font-bold text-secondary mb-6 uppercase tracking-wider">Company</h3>
                         <ul className="space-y-3 text-sm text-neutral/80">
                             <li><Link href="/about" className="hover:text-secondary transition-colors">Who We Are</Link></li>
-                            <li><Link href="/markets-and-contact" className="hover:text-secondary transition-colors">Markets &amp; Contact</Link></li>
+                            <li><Link href="/markets-and-contact" className="hover:text-secondary transition-colors">Contact</Link></li>
                             <li><Link href="/faq" className="hover:text-secondary transition-colors">FAQs</Link></li>
                             <li><Link href="/privacy-policy" className="hover:text-secondary transition-colors">Privacy Policy</Link></li>
                             <li><Link href="/terms-of-trade" className="hover:text-secondary transition-colors">Terms of Trade</Link></li>
@@ -82,7 +82,6 @@ const Footer = () => {
                     <div className="flex gap-6">
                         <Link href="/privacy-policy" className="hover:text-neutral transition-colors">Privacy Policy</Link>
                         <Link href="/terms-of-trade" className="hover:text-neutral transition-colors">Terms of Trade</Link>
-                        <Link href="/sitemap" className="hover:text-neutral transition-colors">Sitemap</Link>
                     </div>
                 </div>
             </div>

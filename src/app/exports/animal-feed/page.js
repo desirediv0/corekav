@@ -64,6 +64,7 @@ export default function AnimalFeed() {
         {
             name: "Molasses-Based Feeds",
             description: "Quick energy source. Improves feed palatability and milk production. Liquid, semi-solid or solid blocks.",
+            image: "/products/animal-feed/Molasses-Mineral-Block.jpg",
             specs: [
                 { label: "Use", value: "Dairy Cattle & Buffalo" },
                 { label: "Form", value: "Liquid / Semi-solid / Block" }
@@ -72,6 +73,7 @@ export default function AnimalFeed() {
         {
             name: "Growth Concentrates",
             description: "Pelleted concentrates for accelerated weight gain and strong skeletal development in calves, heifers, small ruminants.",
+            image: "/products/animal-feed/Lactation-Concentrate.jpg",
             specs: [
                 { label: "Use", value: "Calves, Heifers" },
                 { label: "Form", value: "Pellets" }
@@ -80,6 +82,7 @@ export default function AnimalFeed() {
         {
             name: "Anti-Stress Feed Supplement",
             description: "Water-soluble electrolyte and vitamin support for heat and transport stress relief. Immunity booster.",
+            image: "/products/animal-feed/Specialty-Mineral-Premix.jpg",
             specs: [
                 { label: "Use", value: "Livestock & Poultry" },
                 { label: "Form", value: "Water-soluble Powder" }
@@ -88,6 +91,7 @@ export default function AnimalFeed() {
         {
             name: "Protein Feed Ingredients",
             description: "High protein (~45% CP) pellets or meal for cattle and poultry feed. High palatability, export-friendly.",
+            image: "/products/animal-feed/Protein-Mineral-Feed-Blocks.jpg",
             specs: [
                 { label: "Protein", value: "~45% CP" },
                 { label: "Form", value: "Pellets / Meal" }
@@ -96,6 +100,7 @@ export default function AnimalFeed() {
         {
             name: "Feed Functional Ingredients",
             description: "Improves fat digestion, pellet binding and lubrication. Enhances feed efficiency. Liquid or powder.",
+            image: "/products/animal-feed/Digestive-Feed-Supplement.jpg",
             specs: [
                 { label: "Use", value: "Animal Feed & Pet Food" },
                 { label: "Form", value: "Liquid / Powder" }

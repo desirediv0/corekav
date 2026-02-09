@@ -6,7 +6,7 @@ import { MapPin, Phone, Mail, Globe, Clock } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata = {
-    title: 'Markets & Contact | COREKAV International',
+    title: 'Contact | COREKAV International',
     description: 'Global Markets We Serve, FAQs, and Contact Information.',
 };
 

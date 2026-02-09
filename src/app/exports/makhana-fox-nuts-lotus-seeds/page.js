@@ -29,7 +29,6 @@ export default function Makhana() {
         {
             name: "Saffron",
             description: "Premium spice for culinary and nutraceutical use. Antioxidant and mood support.",
-            image: "/products/Nutrients/Saffron.jpeg",
             specs: [
                 { label: "HS Code", value: "091020" },
                 { label: "Active", value: "Crocin, Safranal" }
