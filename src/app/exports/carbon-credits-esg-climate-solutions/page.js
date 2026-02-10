@@ -28,7 +28,7 @@ export default function CarbonESG() {
         {
             name: "Forestry and Mangrove Projects",
             description: "Nature-based solutions including afforestation, reforestation, and blue-carbon mangrove ecosystems, aligned with biodiversity and climate resilience goals.",
-            image: "/markets-hero.jpg",
+            image: "/products/carbon/forestry-and-mangrove-projects.jpeg",
             specs: [
                 { label: "Type", value: "Nature-based" },
                 { label: "Standard", value: "Verified" }
