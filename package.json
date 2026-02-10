@@ -5,15 +5,18 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "cross-env NODE_ENV=production node server.mjs",
     "lint": "next lint"
   },
   "dependencies": {
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.4",
     "lucide-react": "^0.563.0",
     "next": "14.2.32",
     "nodemailer": "^7.0.13",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sharp": "^0.34.5"
   },
   "devDependencies": {
     "eslint": "^8",
