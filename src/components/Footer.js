@@ -13,7 +13,7 @@ const Footer = () => {
                         <Link href="/" className="inline-block">
                             <Image
                                 src="/logo.png"
-                                alt="COREKAV International Trade"
+                                alt="COREKAV INTERNATIONAL TRADE"
                                 width={160}
                                 height={64}
                                 className="h-20 w-auto object-contain"
@@ -60,7 +60,7 @@ const Footer = () => {
                         <div className="space-y-5 text-sm text-neutral/80">
                             <div className="flex items-start gap-4">
                                 <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
-                                <span className="leading-relaxed">COREKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place<br />New Delhi, India 110001</span>
+                                <span className="leading-relaxed">COREKAV INTERNATIONAL TRADE<br />B-39, 1st Floor, Middle Cir, Connaught Place<br />New Delhi, India 110001</span>
                             </div>
                             <div className="flex items-center gap-4">
                                 <a href="https://wa.me/919319337377" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary font-bold hover:text-white transition-colors">
@@ -78,7 +78,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-neutral/50 gap-4">
-                    <p>© {new Date().getFullYear()} COREKAV International Trade. All rights reserved.</p>
+                    <p>© {new Date().getFullYear()} COREKAV INTERNATIONAL TRADE. All rights reserved.</p>
                     <div className="flex gap-6">
                         <Link href="/privacy-policy" className="hover:text-neutral transition-colors">Privacy Policy</Link>
                         <Link href="/terms-of-trade" className="hover:text-neutral transition-colors">Terms of Trade</Link>

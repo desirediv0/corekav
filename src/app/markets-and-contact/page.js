@@ -82,7 +82,7 @@ export default function MarketsContact() {
                                 <MapPin className="text-secondary flex-shrink-0 mt-0.5" size={24} />
                                 <div>
                                     <h4 className="font-bold text-base sm:text-lg">Headquarters</h4>
-                                    <p className="opacity-80 leading-relaxed text-sm sm:text-base">COREKAV International Trade<br />B-39, 1st Floor, Middle Cir, Connaught Place,<br />New Delhi, Delhi 110001, India</p>
+                                    <p className="opacity-80 leading-relaxed text-sm sm:text-base">COREKAV INTERNATIONAL TRADE<br />B-39, 1st Floor, Middle Cir, Connaught Place,<br />New Delhi, Delhi 110001, India</p>
                                 </div>
                             </div>
                             <div className="flex gap-3 sm:gap-4">

@@ -101,7 +101,7 @@ export async function POST(request) {
           </tr>
           <tr>
             <td style="background-color: #f5f5f5; padding: 14px 24px; border-top: 1px solid #eee; font-size: 11px; color: #666;">
-              COREKAV International Trade · Sent via website inquiry form
+              COREKAV INTERNATIONAL TRADE · Sent via website inquiry form
             </td>
           </tr>
         </table>

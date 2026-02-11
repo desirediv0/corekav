@@ -3,7 +3,7 @@ import Hero from '@/components/Hero';
 
 export const metadata = {
     title: 'Privacy Policy | COREKAV International',
-    description: 'Privacy Policy and Data Protection practices of COREKAV International Trade.',
+    description: 'Privacy Policy and Data Protection practices of COREKAV INTERNATIONAL TRADE.',
 };
 
 export default function PrivacyPolicy() {
@@ -13,7 +13,7 @@ export default function PrivacyPolicy() {
 
             <SectionWrapper className="bg-white">
                 <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-primary prose-headings:font-bold prose-headings:font-serif text-justify">
-                    <p>At COREKAV International Trade (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), we are committed to protecting the privacy and security of your personal information. This Privacy Policy describes how we collect, use, and handle your information when you visit our website or engage with our services.</p>
+                    <p>At COREKAV INTERNATIONAL TRADE (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;), we are committed to protecting the privacy and security of your personal information. This Privacy Policy describes how we collect, use, and handle your information when you visit our website or engage with our services.</p>
 
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">1. Information We Collect</h3>
                     <p>We collect information necessary to facilitate international trade inquiries and processing:</p>
@@ -40,7 +40,7 @@ export default function PrivacyPolicy() {
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">5. Contact Us</h3>
                     <p>If you have any questions regarding this Privacy Policy, please contact us at:</p>
                     <p>
-                        <strong>COREKAV International Trade</strong><br />
+                        <strong>COREKAV INTERNATIONAL TRADE</strong><br />
                         Email: <a href="mailto:info@corekav.com" className="text-secondary font-bold">info@corekav.com</a>
                     </p>
                 </div>

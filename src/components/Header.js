@@ -27,7 +27,7 @@ const Header = () => {
                     <Link href="/" className="flex items-center gap-3 group">
                         <Image
                             src="/logo.png"
-                            alt="COREKAV International Trade"
+                            alt="COREKAV INTERNATIONAL TRADE"
                             width={200}
                             height={200}
                             className="h-20 w-auto object-contain group-hover:opacity-90 transition-opacity"

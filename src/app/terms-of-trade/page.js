@@ -17,7 +17,7 @@ export default function TermsOfTrade() {
 
             <SectionWrapper className="bg-white">
                 <div className="max-w-4xl mx-auto prose prose-lg prose-headings:text-primary prose-headings:font-bold prose-headings:font-serif text-justify">
-                    <p>All export sales and transactions entered into by COREKAV International Trade are subject to the following standard terms and conditions, unless specifically modified by a written contract signed by both parties.</p>
+                    <p>All export sales and transactions entered into by COREKAV INTERNATIONAL TRADE are subject to the following standard terms and conditions, unless specifically modified by a written contract signed by both parties.</p>
 
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">1. Quotations & Contracts</h3>
                     <p>All Proforma Invoices (PI) issued are valid for the period specified within the document (typically 3-7 working days due to commodity price fluctuations). A contract is deemed binding only upon the receipt of the signed PI and/or the advance payment/Letter of Credit establishment.</p>
@@ -33,7 +33,7 @@ export default function TermsOfTrade() {
                     <p>Unless otherwise agreed, all trade terms (FOB, CIF, CFR, CIP) are interpreted in accordance with the <strong>Incoterms® 2020</strong> rules published by the International Chamber of Commerce (ICC).</p>
 
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">4. Delivery & Logistics</h3>
-                    <p>Shipment dates provided are estimates based on current production and vessel schedules. COREKAV International Trade is not liable for delays caused by Force Majeure events, port congestion, or shipping line rescheduling.</p>
+                    <p>Shipment dates provided are estimates based on current production and vessel schedules. COREKAV INTERNATIONAL TRADE is not liable for delays caused by Force Majeure events, port congestion, or shipping line rescheduling.</p>
 
                     <h3 className="text-primary font-bold text-xl mt-8 mb-2">5. Quality & Inspection</h3>
                     <p>Buyers are encouraged to appoint third-party inspection agencies (e.g., SGS, Bureau Veritas) at the time of loading. The findings of such inspections at the load port shall be considered final regarding quality and quantity.</p>

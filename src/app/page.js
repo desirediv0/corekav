@@ -124,7 +124,7 @@ export default function Home() {
             </p>
             <div className="inline-block w-full max-w-md p-4 sm:p-6 border border-secondary rounded-xl bg-white/5 backdrop-blur-sm text-left">
               <h3 className="font-bold text-secondary text-base sm:text-lg mb-2">Contact Us</h3>
-              <p className="font-semibold text-neutral text-sm sm:text-base">COREKAV International Trade</p>
+              <p className="font-semibold text-neutral text-sm sm:text-base">COREKAV INTERNATIONAL TRADE</p>
               <p className="text-sm sm:text-base text-neutral/90">B-39, 1st Floor, Middle Cir, Connaught Place, New Delhi, India 110001</p>
               <p className="mt-3">
                 <a href="https://wa.me/919319337377" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-secondary font-bold hover:underline text-sm sm:text-base break-all sm:break-normal">

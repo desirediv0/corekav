@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const cinzel = Cinzel({ subsets: ["latin"], variable: "--font-cinzel" });
 
 export const metadata = {
-  title: "COREKAV International Trade",
+  title: "COREKAV INTERNATIONAL TRADE",
   description: "International Trade, Export & Global Sourcing Solutions. Diversified Exporter from India for Institutional Buyers.",
 };
 
