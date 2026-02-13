@@ -14,7 +14,7 @@ export default function Sitemap() {
             links: [
                 { name: "Home", href: "/" },
                 { name: "Who We Are", href: "/about" },
-                { name: "Markets & Contact", href: "/markets-and-contact" },
+                { name: "Markets & Contact", href: "/contact" },
                 { name: "Privacy Policy", href: "/privacy-policy" },
                 { name: "Terms of Trade", href: "/terms-of-trade" },
             ]

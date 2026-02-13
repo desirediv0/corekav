@@ -5,7 +5,7 @@ const Hero = ({
     subtitle,
     bgImage = null,
     ctaText = "Contact Us",
-    ctaLink = "/markets-and-contact",
+    ctaLink = "/contact",
     variant = "internal" // 'home' or 'internal'
 }) => {
     const isHome = variant === 'home';

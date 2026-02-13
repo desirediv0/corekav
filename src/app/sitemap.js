@@ -15,7 +15,7 @@ export default function sitemap() {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/markets-and-contact`,
+            url: `${baseUrl}/contact`,
             lastModified: new Date(),
             changeFrequency: 'monthly',
             priority: 0.8,

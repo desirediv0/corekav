@@ -25,7 +25,7 @@ const ContactCTA = () => {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-stretch sm:items-center">
                     <Link
-                        href="/markets-and-contact"
+                        href="/contact"
                         className="inline-flex items-center justify-center px-8 py-4 sm:px-10 bg-secondary text-primary font-bold uppercase tracking-widest hover:bg-white transition-all duration-300 shadow-xl hover:shadow-2xl hover:-translate-y-1 text-sm min-h-[48px]"
                     >
                         Contact Global Sales

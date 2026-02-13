@@ -88,14 +88,14 @@ const Header = () => {
                         </Link>
 
                         <Link
-                            href="/markets-and-contact"
+                            href="/contact"
                             className="text-xs font-semibold hover:text-secondary transition-colors uppercase tracking-widest text-neutral/90"
                         >
                             Contact
                         </Link>
 
                         <Link
-                            href="/markets-and-contact"
+                            href="/contact"
                             className="ml-4 inline-flex items-center justify-center px-6 py-2 border border-secondary text-secondary hover:bg-secondary hover:text-primary transition-all duration-300 text-xs font-bold uppercase tracking-widest rounded-sm"
                         >
                             Inquire Now
@@ -174,7 +174,7 @@ const Header = () => {
                         </Link>
 
                         <Link
-                            href="/markets-and-contact"
+                            href="/contact"
                             onClick={() => setIsOpen(false)}
                             className="text-sm font-semibold text-neutral hover:text-secondary uppercase tracking-wider block border-b border-white/5 pb-2"
                         >
@@ -182,7 +182,7 @@ const Header = () => {
                         </Link>
 
                         <Link
-                            href="/markets-and-contact"
+                            href="/contact"
                             onClick={() => setIsOpen(false)}
                             className="mt-4 text-center py-3 border border-secondary text-secondary hover:bg-secondary hover:text-primary transition-colors text-sm font-bold uppercase tracking-widest rounded-sm"
                         >
