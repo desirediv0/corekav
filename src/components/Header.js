@@ -14,8 +14,8 @@ const Header = () => {
         { name: 'Specialised Agro (Makhana, Saffron)', href: '/exports/makhana-fox-nuts-lotus-seeds' },
         { name: 'Nutraceutical, Herbal & Ayurveda', href: '/exports/herbal-nutraceutical-ayurveda-ingredients' },
         { name: 'Animal Feed & Nutrition', href: '/exports/animal-feed' },
-        { name: 'Veterinary & Animal Husbandry', href: '/exports/veterinary-animal-husbandry-consumables' },
-        { name: 'Human Medical Consumables', href: '/exports/medical-consumables' },
+        // { name: 'Veterinary & Animal Husbandry', href: '/exports/veterinary-animal-husbandry-consumables' },
+        // { name: 'Human Medical Consumables', href: '/exports/medical-consumables' },
         { name: 'Industrial & Electrical', href: '/exports/industrial-electrical-components' },
     ];
 
